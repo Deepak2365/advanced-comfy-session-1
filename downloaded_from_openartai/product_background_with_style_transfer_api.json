@@ -1,0 +1,349 @@
+{
+    "1": {
+        "inputs": {
+            "ckpt_name": "juggernautXL_v9Rdphoto2Lightning.safetensors"
+        },
+        "class_type": "CheckpointLoaderSimple",
+        "_meta": {
+            "title": "Load Checkpoint"
+        }
+    },
+    "2": {
+        "inputs": {
+            "text": "a (cosmetic product:0.8) photoshoot, at beach, high quality, highly detailed, 4k, ((product shoot beautiful)), cinematic, ",
+            "clip": [
+                "1",
+                1
+            ]
+        },
+        "class_type": "CLIPTextEncode",
+        "_meta": {
+            "title": "CLIP Text Encode (Prompt)"
+        }
+    },
+    "3": {
+        "inputs": {
+            "text": "nude, watermark, noisy, glitch, glitch, noise, jpeg artifacts, bad",
+            "clip": [
+                "1",
+                1
+            ]
+        },
+        "class_type": "CLIPTextEncode",
+        "_meta": {
+            "title": "CLIP Text Encode (Prompt)"
+        }
+    },
+    "4": {
+        "inputs": {
+            "image": "4.jpg",
+            "upload": "image"
+        },
+        "class_type": "LoadImage",
+        "_meta": {
+            "title": "Load Image"
+        }
+    },
+    "5": {
+        "inputs": {
+            "width": 1024,
+            "height": 0,
+            "interpolation": "nearest",
+            "method": true,
+            "condition": "always",
+            "multiple_of": 0,
+            "image": [
+                "4",
+                0
+            ]
+        },
+        "class_type": "ImageResize+",
+        "_meta": {
+            "title": "🔧 Image Resize"
+        }
+    },
+    "6": {
+        "inputs": {
+            "ckpt_name": "depth_anything_vitl14.pth",
+            "resolution": 1024,
+            "image": [
+                "5",
+                0
+            ]
+        },
+        "class_type": "DepthAnythingPreprocessor",
+        "_meta": {
+            "title": "Depth Anything"
+        }
+    },
+    "7": {
+        "inputs": {
+            "images": [
+                "6",
+                0
+            ]
+        },
+        "class_type": "PreviewImage",
+        "_meta": {
+            "title": "Preview Image"
+        }
+    },
+    "8": {
+        "inputs": {
+            "seed": 574027754113524,
+            "steps": 7,
+            "cfg": 2,
+            "sampler_name": "dpmpp_sde",
+            "scheduler": "karras",
+            "denoise": 1,
+            "model": [
+                "24",
+                0
+            ],
+            "positive": [
+                "14",
+                0
+            ],
+            "negative": [
+                "14",
+                1
+            ],
+            "latent_image": [
+                "14",
+                2
+            ]
+        },
+        "class_type": "KSampler",
+        "_meta": {
+            "title": "KSampler"
+        }
+    },
+    "9": {
+        "inputs": {
+            "samples": [
+                "8",
+                0
+            ],
+            "vae": [
+                "1",
+                2
+            ]
+        },
+        "class_type": "VAEDecode",
+        "_meta": {
+            "title": "VAE Decode"
+        }
+    },
+    "10": {
+        "inputs": {
+            "filename_prefix": "ComfyUI",
+            "images": [
+                "9",
+                0
+            ]
+        },
+        "class_type": "SaveImage",
+        "_meta": {
+            "title": "Save Image"
+        }
+    },
+    "12": {
+        "inputs": {
+            "strength": 1,
+            "start_percent": 0,
+            "end_percent": 1,
+            "positive": [
+                "2",
+                0
+            ],
+            "negative": [
+                "3",
+                0
+            ],
+            "control_net": [
+                "13",
+                0
+            ],
+            "image": [
+                "6",
+                0
+            ]
+        },
+        "class_type": "ControlNetApplyAdvanced",
+        "_meta": {
+            "title": "Apply ControlNet"
+        }
+    },
+    "13": {
+        "inputs": {
+            "control_net_name": "control-lora-depth-rank256.safetensors"
+        },
+        "class_type": "ControlNetLoader",
+        "_meta": {
+            "title": "Load ControlNet Model"
+        }
+    },
+    "14": {
+        "inputs": {
+            "noise_mask": true,
+            "positive": [
+                "12",
+                0
+            ],
+            "negative": [
+                "12",
+                1
+            ],
+            "vae": [
+                "1",
+                2
+            ],
+            "pixels": [
+                "5",
+                0
+            ],
+            "mask": [
+                "25",
+                0
+            ]
+        },
+        "class_type": "InpaintModelConditioning",
+        "_meta": {
+            "title": "InpaintModelConditioning"
+        }
+    },
+    "15": {
+        "inputs": {
+            "rembg_session": [
+                "16",
+                0
+            ],
+            "image": [
+                "5",
+                0
+            ]
+        },
+        "class_type": "ImageRemoveBackground+",
+        "_meta": {
+            "title": "🔧 Image Remove Background"
+        }
+    },
+    "16": {
+        "inputs": {
+            "model": "u2net: general purpose",
+            "providers": "CPU"
+        },
+        "class_type": "RemBGSession+",
+        "_meta": {
+            "title": "🔧 RemBG Session"
+        }
+    },
+    "17": {
+        "inputs": {
+            "mask": [
+                "15",
+                1
+            ]
+        },
+        "class_type": "MaskPreview+",
+        "_meta": {
+            "title": "🔧 Mask Preview"
+        }
+    },
+    "18": {
+        "inputs": {
+            "model": [
+                "19",
+                0
+            ],
+            "ipadapter": [
+                "19",
+                1
+            ],
+            "image": [
+                "22",
+                0
+            ],
+            "clip_vision": [
+                "21",
+                0
+            ]
+        },
+        "_meta": {}
+    },
+    "19": {
+        "inputs": {
+            "model": [
+                "1",
+                0
+            ]
+        },
+        "_meta": {}
+    },
+    "20": {
+        "inputs": {
+            "image": "9b5527214410cfa8c92c2efddcdf9ea4.jpg",
+            "upload": "image"
+        },
+        "class_type": "LoadImage",
+        "_meta": {
+            "title": "Load Image"
+        }
+    },
+    "21": {
+        "inputs": {
+            "clip_name": "CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors"
+        },
+        "class_type": "CLIPVisionLoader",
+        "_meta": {
+            "title": "Load CLIP Vision"
+        }
+    },
+    "22": {
+        "inputs": {
+            "image": [
+                "20",
+                0
+            ]
+        },
+        "_meta": {}
+    },
+    "23": {
+        "inputs": {
+            "mask": [
+                "15",
+                1
+            ]
+        },
+        "class_type": "InvertMask",
+        "_meta": {
+            "title": "InvertMask"
+        }
+    },
+    "24": {
+        "inputs": {
+            "model": [
+                "18",
+                0
+            ]
+        },
+        "class_type": "DifferentialDiffusion",
+        "_meta": {
+            "title": "Differential Diffusion"
+        }
+    },
+    "25": {
+        "inputs": {
+            "expand": 4,
+            "tapered_corners": true,
+            "mask": [
+                "23",
+                0
+            ]
+        },
+        "class_type": "GrowMask",
+        "_meta": {
+            "title": "GrowMask"
+        }
+    }
+}
