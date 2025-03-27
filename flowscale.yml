@@ -133,6 +133,15 @@ workflows:
     inputs: []
     outputs: []
     skip_preprocess: true
+  - id: ltgfh00ja5
+    name: wan_image_to_video_api.json
+    file: downloaded_from_openartai/wan_image_to_video_api.json
+    version: 0
+    description: ''
+    inputs: []
+    outputs: []
+    skip_preprocess: true
+    advancedConfig: false
 normal_workflows:
   - id: dqev2zfonje
     name: controlnet_connection.json
@@ -185,4 +194,8 @@ normal_workflows:
   - id: zncz4pge9n
     name: basic_relighting.json
     file: relighting/basic_relighting.json
+    version: 0
+  - id: bu6pqsfd4nk
+    name: wan_image_to_video.json
+    file: downloaded_from_openartai/wan_image_to_video.json
     version: 0
