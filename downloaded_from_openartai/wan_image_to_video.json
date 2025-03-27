@@ -1,0 +1,121 @@
+{
+    "last_node_id": 66,
+    "last_link_id": 136,
+    "nodes": [],
+    "links": [
+        [
+            130,
+            64,
+            0,
+            7,
+            0,
+            "CLIP"
+        ],
+        [
+            131,
+            39,
+            0,
+            50,
+            2,
+            "VAE"
+        ],
+        [
+            132,
+            54,
+            0,
+            3,
+            0,
+            "MODEL"
+        ],
+        [
+            133,
+            64,
+            0,
+            6,
+            0,
+            "CLIP"
+        ],
+        [
+            134,
+            39,
+            0,
+            61,
+            3,
+            "VAE"
+        ],
+        [
+            135,
+            39,
+            0,
+            65,
+            1,
+            "VAE"
+        ]
+    ],
+    "groups": [],
+    "config": {},
+    "extra": {
+        "ds": {
+            "scale": 0.2694422623723488,
+            "offset": [
+                888.173469387755,
+                119.16666666666652
+            ]
+        },
+        "ue_links": [
+            {
+                "downstream": 7,
+                "downstream_slot": 0,
+                "upstream": "64",
+                "upstream_slot": 0,
+                "controller": 55,
+                "type": "CLIP"
+            },
+            {
+                "downstream": 50,
+                "downstream_slot": 2,
+                "upstream": "39",
+                "upstream_slot": 0,
+                "controller": 55,
+                "type": "VAE"
+            },
+            {
+                "downstream": 3,
+                "downstream_slot": 0,
+                "upstream": "54",
+                "upstream_slot": 0,
+                "controller": 55,
+                "type": "MODEL"
+            },
+            {
+                "downstream": 6,
+                "downstream_slot": 0,
+                "upstream": "64",
+                "upstream_slot": 0,
+                "controller": 55,
+                "type": "CLIP"
+            },
+            {
+                "downstream": 61,
+                "downstream_slot": 3,
+                "upstream": "39",
+                "upstream_slot": 0,
+                "controller": 55,
+                "type": "VAE"
+            },
+            {
+                "downstream": 65,
+                "downstream_slot": 1,
+                "upstream": "39",
+                "upstream_slot": 0,
+                "controller": 55,
+                "type": "VAE"
+            }
+        ],
+        "VHS_latentpreview": false,
+        "VHS_latentpreviewrate": 0,
+        "VHS_MetadataImage": true,
+        "VHS_KeepIntermediate": true
+    },
+    "version": 0.4
+}
