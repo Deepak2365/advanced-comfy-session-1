@@ -4,7 +4,7 @@ custom_nodes: custom_nodes.json
 user_models: user_models.json
 user_custom_nodes: user_custom_nodes.json
 workflows:
-  - id: k4iq24b2qa8
+  - id: 44p0q65ihod
     name: controlnet_connection_api.json
     file: basics/controlnet_connection_api.json
     version: 1
@@ -12,7 +12,7 @@ workflows:
     inputs: []
     outputs: []
     skip_preprocess: true
-  - id: 2y3agqsib2s
+  - id: 1f9wsezae5v
     name: controlnet_preprocessors_api.json
     file: basics/controlnet_preprocessors_api.json
     version: 0
@@ -20,7 +20,7 @@ workflows:
     inputs: []
     outputs: []
     skip_preprocess: true
-  - id: 4gapex9w26m
+  - id: tvu44tjpw7k
     name: image_composite_masking_api.json
     file: basics/image_composite_masking_api.json
     version: 0
@@ -28,7 +28,7 @@ workflows:
     inputs: []
     outputs: []
     skip_preprocess: true
-  - id: 257l2bb81yd
+  - id: hb4ts5sszc
     name: image_resizing_api.json
     file: basics/image_resizing_api.json
     version: 0
@@ -36,7 +36,7 @@ workflows:
     inputs: []
     outputs: []
     skip_preprocess: true
-  - id: ddy24x4pdml
+  - id: btiikzi9agv
     name: segment_anything_api.json
     file: basics/segment_anything_api.json
     version: 0
@@ -44,7 +44,7 @@ workflows:
     inputs: []
     outputs: []
     skip_preprocess: true
-  - id: eo61ojuh0wb
+  - id: efabba0gzi
     name: product_background_with_style_transfer_api.json
     file: downloaded_from_openartai/product_background_with_style_transfer_api.json
     version: 0
@@ -53,7 +53,16 @@ workflows:
     outputs: []
     skip_preprocess: true
     advancedConfig: false
-  - id: agsh2akiies
+  - id: h383r0w9b0l
+    name: wan_image_to_video_api.json
+    file: downloaded_from_openartai/wan_image_to_video_api.json
+    version: 0
+    description: ''
+    inputs: []
+    outputs: []
+    skip_preprocess: true
+    advancedConfig: false
+  - id: 5ci188dxe0c
     name: basic_inpainting_api.json
     file: inpainting_and_outpainting/basic_inpainting_api.json
     version: 1
@@ -61,7 +70,7 @@ workflows:
     inputs: []
     outputs: []
     skip_preprocess: true
-  - id: oyza6hdaip
+  - id: 738bkbkkb8a
     name: basic_outpainting_api.json
     file: inpainting_and_outpainting/basic_outpainting_api.json
     version: 1
@@ -69,7 +78,7 @@ workflows:
     inputs: []
     outputs: []
     skip_preprocess: true
-  - id: 4uxf9n0qvfs
+  - id: 8a805mpf7ce
     name: fashion_photography_workflow_api.json
     file: inpainting_and_outpainting/fashion_photography_workflow_api.json
     version: 1
@@ -77,7 +86,7 @@ workflows:
     inputs: []
     outputs: []
     skip_preprocess: true
-  - id: xb52inc73qa
+  - id: gprpblr86pq
     name: product_photography_2_api.json
     file: inpainting_and_outpainting/product_photography_2_api.json
     version: 4
@@ -85,7 +94,7 @@ workflows:
     inputs: []
     outputs: []
     skip_preprocess: true
-  - id: pli4ojvpdn
+  - id: 1k2depogb0c
     name: product_photography_api.json
     file: inpainting_and_outpainting/product_photography_api.json
     version: 8
@@ -93,7 +102,7 @@ workflows:
     inputs: []
     outputs: []
     skip_preprocess: true
-  - id: jt1o1p96uhr
+  - id: rni1aotomv
     name: product_photography_improved_api.json
     file: inpainting_and_outpainting/product_photography_improved_api.json
     version: 10
@@ -125,7 +134,7 @@ workflows:
         demo_type: image
     skip_preprocess: true
     advancedConfig: false
-  - id: 04ukqf2guxs
+  - id: owyleu8mnw
     name: basic_relighting_api.json
     file: relighting/basic_relighting_api.json
     version: 0
@@ -133,69 +142,60 @@ workflows:
     inputs: []
     outputs: []
     skip_preprocess: true
-  - id: ltgfh00ja5
-    name: wan_image_to_video_api.json
-    file: downloaded_from_openartai/wan_image_to_video_api.json
-    version: 0
-    description: ''
-    inputs: []
-    outputs: []
-    skip_preprocess: true
-    advancedConfig: false
 normal_workflows:
-  - id: dqev2zfonje
+  - id: a8le8dieik
     name: controlnet_connection.json
     file: basics/controlnet_connection.json
     version: 1
-  - id: a66ui3gv5c
+  - id: 135nfoiiv1w
     name: controlnet_preprocessors.json
     file: basics/controlnet_preprocessors.json
     version: 0
-  - id: 2c62vkeyufx
+  - id: iqe8jh742t
     name: image_composite_masking.json
     file: basics/image_composite_masking.json
     version: 0
-  - id: gxwkc900oh
+  - id: mv51tz2bwxa
     name: image_resizing.json
     file: basics/image_resizing.json
     version: 0
-  - id: egwou514je
+  - id: k2ukqpaw9ip
     name: segment_anything.json
     file: basics/segment_anything.json
     version: 0
-  - id: aj4ounkhujb
+  - id: 1u4fa2m1z7pj
     name: product_background_with_style_transfer.json
     file: downloaded_from_openartai/product_background_with_style_transfer.json
     version: 1
-  - id: 0i6et3xysgzu
+  - id: ue9dl031ma
+    name: wan_image_to_video.json
+    file: downloaded_from_openartai/wan_image_to_video.json
+    version: 1
+  - id: t6mp5ntq76
     name: basic_inpainting.json
     file: inpainting_and_outpainting/basic_inpainting.json
     version: 1
-  - id: symfj9s7ddq
+  - id: m07rpou4kgj
     name: basic_outpainting.json
     file: inpainting_and_outpainting/basic_outpainting.json
     version: 1
-  - id: vqjhbljbl2
+  - id: r2qewswttk
     name: fashion_photography_workflow.json
     file: inpainting_and_outpainting/fashion_photography_workflow.json
     version: 1
-  - id: q5u384eampk
+  - id: 4vs2n2rn9ds
     name: product_photography.json
     file: inpainting_and_outpainting/product_photography.json
     version: 8
-  - id: d4wigls4wpd
+  - id: cdf0f57g9e5
     name: product_photography_2.json
     file: inpainting_and_outpainting/product_photography_2.json
     version: 4
-  - id: nqj0r0rvy7o
+  - id: swakdc57orb
     name: product_photography_improved.json
     file: inpainting_and_outpainting/product_photography_improved.json
     version: 10
-  - id: zncz4pge9n
+  - id: yyndohmuj6
     name: basic_relighting.json
     file: relighting/basic_relighting.json
-    version: 0
-  - id: bu6pqsfd4nk
-    name: wan_image_to_video.json
-    file: downloaded_from_openartai/wan_image_to_video.json
     version: 0
