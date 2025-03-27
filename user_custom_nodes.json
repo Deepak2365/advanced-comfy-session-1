@@ -308,5 +308,79 @@
       "PrepImageForClipVision"
     ],
     "cached": "False"
+  },
+  {
+    "name": "ComfyUI-GGUF",
+    "url": "https://github.com/city96/ComfyUI-GGUF",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "city96",
+      "title": "ComfyUI-GGUF",
+      "id": "comfyui-gguf",
+      "reference": "https://github.com/city96/ComfyUI-GGUF",
+      "files": [
+        "https://github.com/city96/ComfyUI-GGUF"
+      ],
+      "install_type": "git-clone",
+      "description": "GGUF Quantization support for native ComfyUI models\nThis is currently very much WIP. These custom nodes provide support for model files stored in the GGUF format popularized by llama.cpp.\nWhile quantization wasn't feasible for regular UNET models (conv2d), transformer/DiT models such as flux seem less affected by quantization. This allows running it in much lower bits per weight variable bitrate quants on low-end GPUs."
+    },
+    "nodes": [
+      "UnetLoaderGGUF",
+      "CLIPLoaderGGUF"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [
+      "CLIPLoaderGGUF",
+      "DualCLIPLoaderGGUF",
+      "TripleCLIPLoaderGGUF",
+      "UnetLoaderGGUF",
+      "UnetLoaderGGUFAdvanced"
+    ],
+    "cached": "False"
+  },
+  {
+    "name": "ComfyUI-VideoHelperSuite",
+    "url": "https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "Kosinkadink",
+      "title": "ComfyUI-VideoHelperSuite",
+      "id": "vhs",
+      "reference": "https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite",
+      "files": [
+        "https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite"
+      ],
+      "install_type": "git-clone",
+      "description": "Nodes related to video workflows"
+    },
+    "nodes": [
+      "VHS_VideoCombine"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
+  },
+  {
+    "name": "cg-use-everywhere",
+    "url": "https://github.com/chrisgoringe/cg-use-everywhere",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "Unknown",
+      "title": "cg-use-everywhere",
+      "files": [
+        "https://github.com/chrisgoringe/cg-use-everywhere"
+      ],
+      "install_type": "git-clone"
+    },
+    "nodes": "Anything Everywhere3",
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
   }
 ]
