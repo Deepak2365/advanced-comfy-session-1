@@ -449,7 +449,7 @@
                 "Node name for S&R": "KSampler"
             },
             "widgets_values": [
-                654689829781574,
+                186920018612343,
                 "randomize",
                 20,
                 8,
@@ -1105,7 +1105,7 @@
                 "Node name for S&R": "KSampler"
             },
             "widgets_values": [
-                786506531041769,
+                751038266349288,
                 "randomize",
                 40,
                 2,
@@ -2098,12 +2098,12 @@
             "id": 63,
             "type": "SaveImage",
             "pos": [
-                4096.37939453125,
-                2013.6217041015625
+                4071.685302734375,
+                1990.001220703125
             ],
             "size": [
-                315,
-                58
+                313.9263916015625,
+                258.7769470214844
             ],
             "flags": {},
             "order": 50,
@@ -2128,12 +2128,12 @@
             "id": 64,
             "type": "FSSaveImage",
             "pos": [
-                4592.61474609375,
-                2041.72998046875
+                4534.63623046875,
+                1928.994384765625
             ],
             "size": [
                 315,
-                154
+                366
             ],
             "flags": {},
             "order": 51,
@@ -2196,7 +2196,7 @@
                 "Node name for S&R": "FSLoadImage"
             },
             "widgets_values": [
-                "example.png",
+                "perfume-bottle.jpg",
                 "image",
                 "Input Product Image"
             ]
@@ -2232,7 +2232,7 @@
                 "Node name for S&R": "FSLoadText"
             },
             "widgets_values": [
-                "",
+                "bottle of perfume, kept on a rock in a rainforest",
                 "Background Prompt"
             ]
         }
@@ -2990,10 +2990,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 1.1,
+            "scale": 0.6209213230591548,
             "offset": [
-                348.52781037275685,
-                -1105.2488359269257
+                -3074.6255510075007,
+                -1777.3231795383062
             ]
         }
     },
