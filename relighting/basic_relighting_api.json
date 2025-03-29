@@ -52,7 +52,7 @@
     },
     "9": {
         "inputs": {
-            "image": "clipspace/clipspace-mask-1454066.800000012.png [input]",
+            "image": "Homework 16.3.25 Automated Segmentation & ReActor Faceswap of Katrina.png - 7.png",
             "upload": "image"
         },
         "class_type": "LoadImage",
@@ -116,18 +116,6 @@
         "class_type": "MaskToImage",
         "_meta": {
             "title": "Convert Mask to Image"
-        }
-    },
-    "36": {
-        "inputs": {
-            "images": [
-                "7",
-                0
-            ]
-        },
-        "class_type": "PreviewImage",
-        "_meta": {
-            "title": "Preview Image"
         }
     },
     "37": {
@@ -194,6 +182,19 @@
         "class_type": "VAEEncode",
         "_meta": {
             "title": "VAE Encode"
+        }
+    },
+    "47": {
+        "inputs": {
+            "filename_prefix": "ComfyUI",
+            "images": [
+                "7",
+                0
+            ]
+        },
+        "class_type": "SaveImage",
+        "_meta": {
+            "title": "Save Image"
         }
     }
 }
