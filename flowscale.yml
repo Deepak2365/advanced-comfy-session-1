@@ -49,11 +49,12 @@ workflows:
   - id: hb4ts5sszc
     name: image_resizing_api.json
     file: basics/image_resizing_api.json
-    version: 0
+    version: 1
     description: ''
     inputs: []
     outputs: []
     skip_preprocess: true
+    advancedConfig: false
   - id: btiikzi9agv
     name: segment_anything_api.json
     file: basics/segment_anything_api.json
@@ -181,7 +182,7 @@ normal_workflows:
   - id: mv51tz2bwxa
     name: image_resizing.json
     file: basics/image_resizing.json
-    version: 0
+    version: 1
   - id: k2ukqpaw9ip
     name: segment_anything.json
     file: basics/segment_anything.json
