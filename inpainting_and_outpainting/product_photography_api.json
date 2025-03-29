@@ -14,7 +14,7 @@
     },
     "11": {
         "inputs": {
-            "seed": 348357093790903,
+            "seed": 638227209596603,
             "steps": 20,
             "cfg": 8,
             "sampler_name": "euler",
@@ -101,7 +101,7 @@
     },
     "16": {
         "inputs": {
-            "image": "image (5).webp",
+            "image": "jess-bailey-NaTza96eJm0-unsplash.jpg",
             "upload": "image"
         },
         "class_type": "LoadImage",
@@ -111,7 +111,7 @@
     },
     "17": {
         "inputs": {
-            "text": "water bottle, kept on a desk, in a forest background",
+            "text": "perfum bottle, kept on a desk, in a forest background",
             "clip": [
                 "15",
                 1
