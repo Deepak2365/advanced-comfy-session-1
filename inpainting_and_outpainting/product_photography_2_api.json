@@ -14,7 +14,7 @@
     },
     "11": {
         "inputs": {
-            "seed": 1080008058764095,
+            "seed": 480918936782411,
             "steps": 20,
             "cfg": 8,
             "sampler_name": "euler",
@@ -101,7 +101,7 @@
     },
     "16": {
         "inputs": {
-            "image": "51C408F2-775E-4DA7-A55D-027274D679E5.jpg",
+            "image": "jess-bailey-NaTza96eJm0-unsplash.jpg",
             "upload": "image"
         },
         "class_type": "LoadImage",
@@ -440,7 +440,7 @@
     },
     "46": {
         "inputs": {
-            "seed": 396004018444653,
+            "seed": 882238812950968,
             "steps": 40,
             "cfg": 2,
             "sampler_name": "dpmpp_2m_sde",
@@ -745,6 +745,18 @@
         "inputs": {
             "images": [
                 "63",
+                0
+            ]
+        },
+        "class_type": "PreviewImage",
+        "_meta": {
+            "title": "Preview Image"
+        }
+    },
+    "69": {
+        "inputs": {
+            "images": [
+                "62",
                 0
             ]
         },
