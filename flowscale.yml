@@ -7,11 +7,28 @@ workflows:
   - id: 44p0q65ihod
     name: controlnet_connection_api.json
     file: basics/controlnet_connection_api.json
-    version: 1
+    version: 2
     description: ''
-    inputs: []
-    outputs: []
+    inputs:
+      - path: 64.inputs.filename_prefix
+        label: filename_prefix
+        parameter_name: filename_prefix_47206
+        type: string
+        demo_type: text
+        category: output
+        randomize: true
+      - path: 66.inputs.default_value
+        label: Background Prompt
+        parameter_name: default_value_94698
+        type: string
+        demo_type: text
+        category: input
+        randomize: false
+    outputs:
+      - label: Output Image
+        demo_type: image
     skip_preprocess: true
+    advancedConfig: false
   - id: 1f9wsezae5v
     name: controlnet_preprocessors_api.json
     file: basics/controlnet_preprocessors_api.json
@@ -151,7 +168,7 @@ normal_workflows:
   - id: a8le8dieik
     name: controlnet_connection.json
     file: basics/controlnet_connection.json
-    version: 1
+    version: 2
   - id: 135nfoiiv1w
     name: controlnet_preprocessors.json
     file: basics/controlnet_preprocessors.json
