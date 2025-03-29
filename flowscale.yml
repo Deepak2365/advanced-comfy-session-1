@@ -99,11 +99,12 @@ workflows:
   - id: 1k2depogb0c
     name: product_photography_api.json
     file: inpainting_and_outpainting/product_photography_api.json
-    version: 8
+    version: 9
     description: ''
     inputs: []
     outputs: []
     skip_preprocess: true
+    advancedConfig: false
   - id: rni1aotomv
     name: product_photography_improved_api.json
     file: inpainting_and_outpainting/product_photography_improved_api.json
@@ -189,7 +190,7 @@ normal_workflows:
   - id: 4vs2n2rn9ds
     name: product_photography.json
     file: inpainting_and_outpainting/product_photography.json
-    version: 8
+    version: 9
   - id: cdf0f57g9e5
     name: product_photography_2.json
     file: inpainting_and_outpainting/product_photography_2.json
