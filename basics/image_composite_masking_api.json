@@ -24,7 +24,7 @@
     },
     "11": {
         "inputs": {
-            "image": "ComfyUI_00014_.png",
+            "image": "ComfyUI_00011_ (1).png",
             "upload": "image"
         },
         "class_type": "LoadImage",
@@ -34,7 +34,7 @@
     },
     "12": {
         "inputs": {
-            "image": "ComfyUI_00006_ (2).png",
+            "image": "cat.webp",
             "upload": "image"
         },
         "class_type": "LoadImage",
@@ -44,7 +44,7 @@
     },
     "13": {
         "inputs": {
-            "image": "clipspace/clipspace-mask-220458.80000001192.png [input]",
+            "image": "clipspace/clipspace-mask-1453537.0999999978.png [input]",
             "upload": "image"
         },
         "class_type": "LoadImage",
