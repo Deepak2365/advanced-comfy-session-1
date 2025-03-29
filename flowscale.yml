@@ -41,11 +41,12 @@ workflows:
   - id: tvu44tjpw7k
     name: image_composite_masking_api.json
     file: basics/image_composite_masking_api.json
-    version: 0
+    version: 1
     description: ''
     inputs: []
     outputs: []
     skip_preprocess: true
+    advancedConfig: false
   - id: hb4ts5sszc
     name: image_resizing_api.json
     file: basics/image_resizing_api.json
@@ -178,7 +179,7 @@ normal_workflows:
   - id: iqe8jh742t
     name: image_composite_masking.json
     file: basics/image_composite_masking.json
-    version: 0
+    version: 1
   - id: mv51tz2bwxa
     name: image_resizing.json
     file: basics/image_resizing.json
