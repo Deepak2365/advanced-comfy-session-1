@@ -1,7 +1,7 @@
 {
     "3": {
         "inputs": {
-            "seed": 492305295044545,
+            "seed": 515705773171580,
             "steps": 20,
             "cfg": 8,
             "sampler_name": "dpmpp_2m_sde",
@@ -112,7 +112,7 @@
     },
     "11": {
         "inputs": {
-            "image": "ComfyUI_00018_.png",
+            "image": "Boss Perfume bottle.webp",
             "upload": "image"
         },
         "class_type": "LoadImage",
