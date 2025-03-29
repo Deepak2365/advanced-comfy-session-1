@@ -32,11 +32,12 @@ workflows:
   - id: 1f9wsezae5v
     name: controlnet_preprocessors_api.json
     file: basics/controlnet_preprocessors_api.json
-    version: 0
+    version: 1
     description: ''
     inputs: []
     outputs: []
     skip_preprocess: true
+    advancedConfig: false
   - id: tvu44tjpw7k
     name: image_composite_masking_api.json
     file: basics/image_composite_masking_api.json
@@ -172,7 +173,7 @@ normal_workflows:
   - id: 135nfoiiv1w
     name: controlnet_preprocessors.json
     file: basics/controlnet_preprocessors.json
-    version: 0
+    version: 1
   - id: iqe8jh742t
     name: image_composite_masking.json
     file: basics/image_composite_masking.json
