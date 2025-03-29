@@ -52,7 +52,7 @@
     },
     "9": {
         "inputs": {
-            "image": "Homework 16.3.25 Automated Segmentation & ReActor Faceswap of Katrina.png - 7.png",
+            "image": "clipspace/clipspace-mask-120572.79999999981.png [input]",
             "upload": "image"
         },
         "class_type": "LoadImage",
