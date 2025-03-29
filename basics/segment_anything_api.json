@@ -41,7 +41,7 @@
     },
     "13": {
         "inputs": {
-            "image": "L1_ebae23ff-f31d-459a-a093-9104c4e4def8.webp",
+            "image": "Perfume bottle - product photography improved workflow.png",
             "upload": "image"
         },
         "class_type": "LoadImage",
@@ -73,16 +73,17 @@
             "title": "Convert Mask to Image"
         }
     },
-    "16": {
+    "17": {
         "inputs": {
+            "filename_prefix": "ComfyUI",
             "images": [
                 "15",
                 0
             ]
         },
-        "class_type": "PreviewImage",
+        "class_type": "SaveImage",
         "_meta": {
-            "title": "Preview Image"
+            "title": "Save Image"
         }
     }
 }
