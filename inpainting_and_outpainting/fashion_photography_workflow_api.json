@@ -71,7 +71,7 @@
     },
     "15": {
         "inputs": {
-            "seed": 336009918199243,
+            "seed": 1063676048209900,
             "steps": 20,
             "cfg": 8,
             "sampler_name": "euler",
@@ -223,7 +223,7 @@
     },
     "26": {
         "inputs": {
-            "text": "british young man, wearing black shirt and grey pants, london street background"
+            "text": "british young woman wearing black shirt and blue jeans, london street background"
         },
         "class_type": "Text Multiline",
         "_meta": {
@@ -424,7 +424,7 @@
     },
     "40": {
         "inputs": {
-            "seed": 145770813750588,
+            "seed": 486102769585035,
             "steps": 40,
             "cfg": 2,
             "sampler_name": "dpmpp_2m_sde",
@@ -743,7 +743,7 @@
     },
     "59": {
         "inputs": {
-            "image": "WhatsApp Image 2024-03-09 at 16.35.31.jpeg",
+            "image": "ComfyUI_00015_.png",
             "upload": "image"
         },
         "class_type": "LoadImage",
