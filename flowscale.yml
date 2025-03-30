@@ -235,12 +235,12 @@ workflows:
   - id: xstnlx92oti
     name: flux_fill_workflow_api.json
     file: imported_from_deepaks_projects/flux_fill_workflow_api.json
-    version: 1
+    version: 2
     description: ''
     inputs: []
     outputs: []
     skip_preprocess: true
-    advancedConfig: true
+    advancedConfig: false
 normal_workflows:
   - id: a8le8dieik
     name: controlnet_connection.json
@@ -333,4 +333,4 @@ normal_workflows:
   - id: ue3l9s4ad39
     name: flux_fill_workflow.json
     file: imported_from_deepaks_projects/flux_fill_workflow.json
-    version: 1
+    version: 2
