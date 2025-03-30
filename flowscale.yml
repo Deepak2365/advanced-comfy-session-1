@@ -250,6 +250,16 @@ workflows:
     outputs: []
     skip_preprocess: true
     advancedConfig: false
+  - id: lhekj1tf1e9
+    name: plus_face_ip_adaptor_using_plus_face_portraits_api.json
+    file: >-
+      imported_from_deepaks_projects/plus_face_ip_adaptor_using_plus_face_portraits_api.json
+    version: 0
+    description: ''
+    inputs: []
+    outputs: []
+    skip_preprocess: true
+    advancedConfig: false
 normal_workflows:
   - id: a8le8dieik
     name: controlnet_connection.json
@@ -346,4 +356,9 @@ normal_workflows:
   - id: 3ktmqfkwhlu
     name: flux_redux_workflow.json
     file: imported_from_deepaks_projects/flux_redux_workflow.json
+    version: 0
+  - id: kagiie2bmum
+    name: plus_face_ip_adaptor_using_plus_face_portraits.json
+    file: >-
+      imported_from_deepaks_projects/plus_face_ip_adaptor_using_plus_face_portraits.json
     version: 0
