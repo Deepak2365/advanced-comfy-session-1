@@ -1,7 +1,7 @@
 {
     "10": {
         "inputs": {
-            "seed": 1066190489612342,
+            "seed": 167726482595355,
             "steps": 30,
             "cfg": 1,
             "sampler_name": "euler",
@@ -31,7 +31,7 @@
     },
     "11": {
         "inputs": {
-            "text": "image of an actress wearing sunglasses",
+            "text": "image of an actress wearing tennis cap",
             "clip": [
                 "16",
                 0
@@ -159,7 +159,7 @@
     },
     "21": {
         "inputs": {
-            "image": "clipspace/clipspace-mask-4200752.900000006.png [input]",
+            "image": "clipspace/clipspace-mask-1184037.299999997.png [input]",
             "upload": "image"
         },
         "class_type": "LoadImage",
