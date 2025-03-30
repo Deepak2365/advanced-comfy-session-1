@@ -232,6 +232,15 @@ workflows:
     outputs: []
     skip_preprocess: true
     advancedConfig: false
+  - id: xstnlx92oti
+    name: flux_fill_workflow_api.json
+    file: imported_from_deepaks_projects/flux_fill_workflow_api.json
+    version: 0
+    description: ''
+    inputs: []
+    outputs: []
+    skip_preprocess: true
+    advancedConfig: false
 normal_workflows:
   - id: a8le8dieik
     name: controlnet_connection.json
@@ -320,4 +329,8 @@ normal_workflows:
   - id: ricocimylyf
     name: face_swap_using_ic_adapter.json
     file: imported_from_deepaks_projects/face_swap_using_ic_adapter.json
+    version: 0
+  - id: ue3l9s4ad39
+    name: flux_fill_workflow.json
+    file: imported_from_deepaks_projects/flux_fill_workflow.json
     version: 0
