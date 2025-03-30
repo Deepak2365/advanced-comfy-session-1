@@ -54,7 +54,7 @@
                 "Node name for S&R": "KSampler"
             },
             "widgets_values": [
-                1066190489612342,
+                167726482595355,
                 "randomize",
                 30,
                 1,
@@ -100,7 +100,7 @@
                 "Node name for S&R": "CLIPTextEncode"
             },
             "widgets_values": [
-                "image of an actress wearing sunglasses"
+                "image of an actress wearing tennis cap"
             ]
         },
         {
@@ -301,7 +301,7 @@
                 58
             ],
             "flags": {},
-            "order": 3,
+            "order": 2,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -328,11 +328,11 @@
             "id": 19,
             "type": "FluxGuidance",
             "pos": [
-                1340.38720703125,
-                200.83087158203125
+                1358.053955078125,
+                178.7476043701172
             ],
             "size": [
-                317.4000244140625,
+                211.60000610351562,
                 58
             ],
             "flags": {},
@@ -452,7 +452,7 @@
                 314
             ],
             "flags": {},
-            "order": 2,
+            "order": 3,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -479,7 +479,7 @@
                 "Node name for S&R": "LoadImage"
             },
             "widgets_values": [
-                "clipspace/clipspace-mask-4200752.900000006.png [input]",
+                "clipspace/clipspace-mask-1184037.299999997.png [input]",
                 "image"
             ]
         },
@@ -658,8 +658,8 @@
         "ds": {
             "scale": 0.6037753776435048,
             "offset": [
-                -534.9191362079897,
-                -171.03503479358977
+                -544.8566067014332,
+                -105.889378043931
             ]
         },
         "ue_links": [],
