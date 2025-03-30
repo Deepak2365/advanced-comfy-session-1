@@ -6,15 +6,15 @@
             "id": 6,
             "type": "CLIPTextEncode",
             "pos": [
-                323.9287109375,
-                237.9431915283203
+                1318.0850830078125,
+                430.1468811035156
             ],
             "size": [
-                428.36431884765625,
-                171.21217346191406
+                285.6000061035156,
+                112.32749938964844
             ],
             "flags": {},
-            "order": 13,
+            "order": 14,
             "mode": 0,
             "inputs": [
                 {
@@ -49,8 +49,8 @@
             "id": 8,
             "type": "VAEDecode",
             "pos": [
-                1206.296142578125,
-                235.91270446777344
+                1992.4444580078125,
+                458.7059020996094
             ],
             "size": [
                 210,
@@ -94,15 +94,15 @@
             "id": 27,
             "type": "EmptySD3LatentImage",
             "pos": [
-                342.5732727050781,
-                559.2463989257812
+                1317.3563232421875,
+                688.2320556640625
             ],
             "size": [
-                315,
+                210,
                 106
             ],
             "flags": {},
-            "order": 0,
+            "order": 5,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -133,8 +133,8 @@
             "id": 31,
             "type": "KSampler",
             "pos": [
-                822.2826538085938,
-                220.33116149902344
+                1659.413330078125,
+                411.5152282714844
             ],
             "size": [
                 315,
@@ -182,7 +182,7 @@
                 "Node name for S&R": "KSampler"
             },
             "widgets_values": [
-                173805153958815,
+                173805153958816,
                 "increment",
                 30,
                 1,
@@ -195,8 +195,8 @@
             "id": 33,
             "type": "CLIPTextEncode",
             "pos": [
-                354.29425048828125,
-                449.443359375
+                1310.723876953125,
+                631.4507446289062
             ],
             "size": [
                 422.84503173828125,
@@ -205,7 +205,7 @@
             "flags": {
                 "collapsed": true
             },
-            "order": 12,
+            "order": 13,
             "mode": 0,
             "inputs": [
                 {
@@ -241,15 +241,15 @@
             "id": 37,
             "type": "UNETLoader",
             "pos": [
-                -72.67830657958984,
-                294.72283935546875
+                1002.0305786132812,
+                419.11993408203125
             ],
             "size": [
-                315,
+                266.7706298828125,
                 82
             ],
             "flags": {},
-            "order": 1,
+            "order": 3,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -276,15 +276,15 @@
             "id": 38,
             "type": "DualCLIPLoader",
             "pos": [
-                -51.943294525146484,
-                456.8731994628906
+                1001.3529052734375,
+                559.347900390625
             ],
             "size": [
-                326.7498474121094,
-                117.31372833251953
+                278.5205078125,
+                106
             ],
             "flags": {},
-            "order": 2,
+            "order": 6,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -315,8 +315,8 @@
             "id": 41,
             "type": "FluxGuidance",
             "pos": [
-                828.5650024414062,
-                596.6900634765625
+                1562.711181640625,
+                737.9118041992188
             ],
             "size": [
                 211.60000610351562,
@@ -355,15 +355,15 @@
             "id": 42,
             "type": "StyleModelLoader",
             "pos": [
-                -28.495258331298828,
-                1087.8231201171875
+                1074.763671875,
+                1143.9039306640625
             ],
             "size": [
                 315,
                 58
             ],
             "flags": {},
-            "order": 3,
+            "order": 0,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -391,15 +391,15 @@
             "id": 43,
             "type": "CLIPVisionLoader",
             "pos": [
-                10.287690162658691,
-                1244.744384765625
+                1113.5467529296875,
+                1300.8251953125
             ],
             "size": [
                 315,
                 58
             ],
             "flags": {},
-            "order": 4,
+            "order": 1,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -427,8 +427,8 @@
             "id": 44,
             "type": "ReduxAdvanced",
             "pos": [
-                391.9634094238281,
-                917.4366455078125
+                1495.2225341796875,
+                973.5173950195312
             ],
             "size": [
                 317.4000244140625,
@@ -486,10 +486,10 @@
                 }
             ],
             "properties": {
-                "cnr_id": "ComfyUI_AdvancedRefluxControl",
+                "aux_id": "kaibioinfo/ComfyUI_AdvancedRefluxControl",
                 "ver": "0a87efa252ae5e8f4af1225b0e19c867f908376a",
                 "Node name for S&R": "ReduxAdvanced",
-                "aux_id": "kaibioinfo/ComfyUI_AdvancedRefluxControl"
+                "cnr_id": "ComfyUI_AdvancedRefluxControl"
             },
             "widgets_values": [
                 3,
@@ -503,8 +503,8 @@
             "id": 45,
             "type": "ReduxAdvanced",
             "pos": [
-                750.05078125,
-                910.576904296875
+                1853.3096923828125,
+                966.6575927734375
             ],
             "size": [
                 317.4000244140625,
@@ -562,10 +562,10 @@
                 }
             ],
             "properties": {
-                "cnr_id": "ComfyUI_AdvancedRefluxControl",
+                "aux_id": "kaibioinfo/ComfyUI_AdvancedRefluxControl",
                 "ver": "0a87efa252ae5e8f4af1225b0e19c867f908376a",
                 "Node name for S&R": "ReduxAdvanced",
-                "aux_id": "kaibioinfo/ComfyUI_AdvancedRefluxControl"
+                "cnr_id": "ComfyUI_AdvancedRefluxControl"
             },
             "widgets_values": [
                 3,
@@ -579,8 +579,8 @@
             "id": 46,
             "type": "ReduxAdvanced",
             "pos": [
-                1092.7459716796875,
-                929.6177978515625
+                2196.004638671875,
+                985.6986083984375
             ],
             "size": [
                 317.4000244140625,
@@ -638,10 +638,10 @@
                 }
             ],
             "properties": {
-                "cnr_id": "ComfyUI_AdvancedRefluxControl",
+                "aux_id": "kaibioinfo/ComfyUI_AdvancedRefluxControl",
                 "ver": "0a87efa252ae5e8f4af1225b0e19c867f908376a",
                 "Node name for S&R": "ReduxAdvanced",
-                "aux_id": "kaibioinfo/ComfyUI_AdvancedRefluxControl"
+                "cnr_id": "ComfyUI_AdvancedRefluxControl"
             },
             "widgets_values": [
                 3,
@@ -655,15 +655,15 @@
             "id": 50,
             "type": "VAELoader",
             "pos": [
-                1177.6636962890625,
-                485.9179992675781
+                1810.8641357421875,
+                721.9666748046875
             ],
             "size": [
                 210,
                 58
             ],
             "flags": {},
-            "order": 5,
+            "order": 4,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -690,12 +690,12 @@
             "id": 154,
             "type": "SaveImage",
             "pos": [
-                1445.01318359375,
-                218.1424560546875
+                2245.437255859375,
+                391.99249267578125
             ],
             "size": [
-                619.2056274414062,
-                488.1266174316406
+                285.98455810546875,
+                271.706298828125
             ],
             "flags": {},
             "order": 30,
@@ -721,8 +721,8 @@
             "id": 155,
             "type": "LoadImage",
             "pos": [
-                399.29644775390625,
-                1254.4560546875
+                1459.7303466796875,
+                1311.5565185546875
             ],
             "size": [
                 315,
@@ -764,8 +764,8 @@
             "id": 156,
             "type": "LoadImage",
             "pos": [
-                751.8287353515625,
-                1249.1343994140625
+                1833.675048828125,
+                1314.39208984375
             ],
             "size": [
                 315,
@@ -798,7 +798,7 @@
                 "Node name for S&R": "LoadImage"
             },
             "widgets_values": [
-                "LFC Jersey.webp",
+                "rose wine in glass.jpg",
                 "image"
             ]
         },
@@ -806,8 +806,8 @@
             "id": 157,
             "type": "LoadImage",
             "pos": [
-                1094.1607666015625,
-                1258.145751953125
+                2213.734375,
+                1313.2069091796875
             ],
             "size": [
                 315,
@@ -838,7 +838,7 @@
                 "Node name for S&R": "LoadImage"
             },
             "widgets_values": [
-                "football field.jpg",
+                "maharaja-suite-leela-palace-hotel-delhi.jpg.webp",
                 "image"
             ]
         },
@@ -846,8 +846,8 @@
             "id": 158,
             "type": "ImageResize+",
             "pos": [
-                2942.44873046875,
-                1139.750244140625
+                3713.304931640625,
+                1230.498779296875
             ],
             "size": [
                 244.8402862548828,
@@ -898,10 +898,10 @@
                 }
             ],
             "properties": {
-                "cnr_id": "comfyui_essentials",
+                "aux_id": "cubiq/ComfyUI_essentials",
                 "ver": "33ff89fd354d8ec3ab6affb605a79a931b445d99",
                 "Node name for S&R": "ImageResize+",
-                "aux_id": "cubiq/ComfyUI_essentials"
+                "cnr_id": "comfyui_essentials"
             },
             "widgets_values": [
                 0,
@@ -916,8 +916,8 @@
             "id": 159,
             "type": "ImageConcanate",
             "pos": [
-                3412.493408203125,
-                1477.1651611328125
+                3999.8125,
+                1488.3812255859375
             ],
             "size": [
                 212.79220581054688,
@@ -950,10 +950,10 @@
                 }
             ],
             "properties": {
-                "cnr_id": "comfyui-kjnodes",
+                "aux_id": "kijai/ComfyUI-KJNodes",
                 "ver": "1a4259f05206d7360be7a90145b5839d5b64d893",
                 "Node name for S&R": "ImageConcanate",
-                "aux_id": "kijai/ComfyUI-KJNodes"
+                "cnr_id": "comfyui-kjnodes"
             },
             "widgets_values": [
                 "right",
@@ -964,8 +964,8 @@
             "id": 160,
             "type": "MaskToImage",
             "pos": [
-                3008.59765625,
-                1493.8629150390625
+                3718.27392578125,
+                1503.03955078125
             ],
             "size": [
                 202.61997985839844,
@@ -1002,8 +1002,8 @@
             "id": 161,
             "type": "EmptyImage",
             "pos": [
-                3268.971435546875,
-                1223.0023193359375
+                3999.041259765625,
+                1253.5916748046875
             ],
             "size": [
                 210,
@@ -1056,8 +1056,8 @@
             "id": 162,
             "type": "ImageToMask",
             "pos": [
-                3653.7353515625,
-                1459.7608642578125
+                4250.23046875,
+                1285.4002685546875
             ],
             "size": [
                 236.39999389648438,
@@ -1096,8 +1096,8 @@
             "id": 163,
             "type": "VAEDecode",
             "pos": [
-                3802.046630859375,
-                284.044921875
+                3817.03857421875,
+                407.5245666503906
             ],
             "size": [
                 203.7080078125,
@@ -1140,8 +1140,8 @@
             "id": 164,
             "type": "InpaintModelConditioning",
             "pos": [
-                3103.694580078125,
-                379.33392333984375
+                3316.09130859375,
+                490.4756164550781
             ],
             "size": [
                 210,
@@ -1216,8 +1216,8 @@
             "id": 165,
             "type": "ImageCrop",
             "pos": [
-                4177.04345703125,
-                382.8676452636719
+                4150.431640625,
+                466.6826477050781
             ],
             "size": [
                 210,
@@ -1275,8 +1275,8 @@
             "id": 166,
             "type": "ImageConcanate",
             "pos": [
-                3242.265625,
-                1016.3480834960938
+                3990.68701171875,
+                1033.681884765625
             ],
             "size": [
                 210,
@@ -1310,10 +1310,10 @@
                 }
             ],
             "properties": {
-                "cnr_id": "comfyui-kjnodes",
+                "aux_id": "kijai/ComfyUI-KJNodes",
                 "ver": "1a4259f05206d7360be7a90145b5839d5b64d893",
                 "Node name for S&R": "ImageConcanate",
-                "aux_id": "kijai/ComfyUI-KJNodes"
+                "cnr_id": "comfyui-kjnodes"
             },
             "widgets_values": [
                 "right",
@@ -1324,15 +1324,15 @@
             "id": 169,
             "type": "UNETLoader",
             "pos": [
-                2277.20703125,
-                242.98374938964844
+                2725.140380859375,
+                274.4908752441406
             ],
             "size": [
                 315,
                 82
             ],
             "flags": {},
-            "order": 6,
+            "order": 2,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -1361,8 +1361,8 @@
             "id": 171,
             "type": "FluxGuidance",
             "pos": [
-                3051.4814453125,
-                241.20738220214844
+                3339.02490234375,
+                294.02520751953125
             ],
             "size": [
                 211.60000610351562,
@@ -1403,12 +1403,12 @@
             "id": 172,
             "type": "KSampler",
             "pos": [
-                3380.9296875,
-                204.03924560546875
+                3565.284423828125,
+                478.9363708496094
             ],
             "size": [
-                251.41734313964844,
-                278.02349853515625
+                210,
+                262
             ],
             "flags": {},
             "order": 47,
@@ -1451,7 +1451,7 @@
                 "Node name for S&R": "KSampler"
             },
             "widgets_values": [
-                347150099753783,
+                51591858774847,
                 "randomize",
                 12,
                 1,
@@ -1466,12 +1466,12 @@
             "id": 173,
             "type": "PreviewImage",
             "pos": [
-                3653.109130859375,
-                453.5610656738281
+                3831.854736328125,
+                520.959716796875
             ],
             "size": [
-                340.98052978515625,
-                288.6927795410156
+                235.9567413330078,
+                265.7507019042969
             ],
             "flags": {},
             "order": 50,
@@ -1497,12 +1497,12 @@
             "id": 174,
             "type": "ImageAndMaskPreview",
             "pos": [
-                3976.612060546875,
-                1020.401123046875
+                4536.400390625,
+                954.1242065429688
             ],
             "size": [
-                325.834716796875,
-                340.9549255371094
+                224.88963317871094,
+                240.00973510742188
             ],
             "flags": {},
             "order": 46,
@@ -1529,10 +1529,10 @@
                 }
             ],
             "properties": {
-                "cnr_id": "comfyui-kjnodes",
+                "aux_id": "kijai/ComfyUI-KJNodes",
                 "ver": "1a4259f05206d7360be7a90145b5839d5b64d893",
                 "Node name for S&R": "ImageAndMaskPreview",
-                "aux_id": "kijai/ComfyUI-KJNodes"
+                "cnr_id": "comfyui-kjnodes"
             },
             "widgets_values": [
                 0.5,
@@ -1546,8 +1546,8 @@
             "id": 175,
             "type": "ImageResize+",
             "pos": [
-                2546.852783203125,
-                1080.2822265625
+                3411.515380859375,
+                1007.8867797851562
             ],
             "size": [
                 255.87393188476562,
@@ -1593,10 +1593,10 @@
                 }
             ],
             "properties": {
-                "cnr_id": "comfyui_essentials",
+                "aux_id": "cubiq/ComfyUI_essentials",
                 "ver": "33ff89fd354d8ec3ab6affb605a79a931b445d99",
                 "Node name for S&R": "ImageResize+",
-                "aux_id": "cubiq/ComfyUI_essentials"
+                "cnr_id": "comfyui_essentials"
             },
             "widgets_values": [
                 1024,
@@ -1613,8 +1613,8 @@
             "id": 176,
             "type": "ResizeMask",
             "pos": [
-                2701.3779296875,
-                1413.477783203125
+                3404.93505859375,
+                1356.3773193359375
             ],
             "size": [
                 261.642333984375,
@@ -1667,10 +1667,10 @@
                 }
             ],
             "properties": {
-                "cnr_id": "comfyui-kjnodes",
+                "aux_id": "kijai/ComfyUI-KJNodes",
                 "ver": "1a4259f05206d7360be7a90145b5839d5b64d893",
                 "Node name for S&R": "ResizeMask",
-                "aux_id": "kijai/ComfyUI-KJNodes"
+                "cnr_id": "comfyui-kjnodes"
             },
             "widgets_values": [
                 512,
@@ -1684,12 +1684,12 @@
             "id": 177,
             "type": "ImpactGaussianBlurMask",
             "pos": [
-                3574.288330078125,
-                1275.8319091796875
+                4530.71875,
+                1406.8570556640625
             ],
             "size": [
-                315,
-                82
+                210,
+                85.56878662109375
             ],
             "flags": {},
             "order": 44,
@@ -1713,10 +1713,10 @@
                 }
             ],
             "properties": {
-                "cnr_id": "comfyui-impact-pack",
+                "aux_id": "ltdrdata/ComfyUI-Impact-Pack",
                 "ver": "8.8.1",
                 "Node name for S&R": "ImpactGaussianBlurMask",
-                "aux_id": "ltdrdata/ComfyUI-Impact-Pack"
+                "cnr_id": "comfyui-impact-pack"
             },
             "widgets_values": [
                 50,
@@ -1727,11 +1727,11 @@
             "id": 178,
             "type": "ConditioningZeroOut",
             "pos": [
-                2688.34619140625,
-                538.3084106445312
+                3063.37548828125,
+                511.4916687011719
             ],
             "size": [
-                317.4000244140625,
+                211.60000610351562,
                 26
             ],
             "flags": {
@@ -1769,11 +1769,11 @@
             "id": 182,
             "type": "InpaintCrop",
             "pos": [
-                2032.9169921875,
-                1051.1929931640625
+                3045.428955078125,
+                1048.1339111328125
             ],
             "size": [
-                443.4000244140625,
+                295.6000061035156,
                 314
             ],
             "flags": {},
@@ -1824,10 +1824,10 @@
                 }
             ],
             "properties": {
-                "cnr_id": "comfyui-inpaint-cropandstitch",
+                "aux_id": "lquesada/ComfyUI-Inpaint-CropAndStitch",
                 "ver": "1.0.0",
                 "Node name for S&R": "InpaintCrop",
-                "aux_id": "lquesada/ComfyUI-Inpaint-CropAndStitch"
+                "cnr_id": "comfyui-inpaint-cropandstitch"
             },
             "widgets_values": [
                 0,
@@ -1854,8 +1854,8 @@
             "id": 183,
             "type": "InpaintStitch",
             "pos": [
-                4216.33740234375,
-                637.790283203125
+                4160.564453125,
+                696.9299926757812
             ],
             "size": [
                 238.02134704589844,
@@ -1887,10 +1887,10 @@
                 }
             ],
             "properties": {
-                "cnr_id": "comfyui-inpaint-cropandstitch",
+                "aux_id": "lquesada/ComfyUI-Inpaint-CropAndStitch",
                 "ver": "1.0.0",
                 "Node name for S&R": "InpaintStitch",
-                "aux_id": "lquesada/ComfyUI-Inpaint-CropAndStitch"
+                "cnr_id": "comfyui-inpaint-cropandstitch"
             },
             "widgets_values": [
                 "bislerp"
@@ -1902,12 +1902,12 @@
             "id": 187,
             "type": "CLIPTextEncode",
             "pos": [
-                2674.413818359375,
-                285.97088623046875
+                3083.0908203125,
+                293.92431640625
             ],
             "size": [
-                332.5511169433594,
-                172.9056854248047
+                222.63308715820312,
+                140.93971252441406
             ],
             "flags": {},
             "order": 22,
@@ -1945,12 +1945,12 @@
             "id": 188,
             "type": "SaveImage",
             "pos": [
-                4532.44287109375,
-                358.1270446777344
+                4432.92822265625,
+                474.46875
             ],
             "size": [
-                459.9472961425781,
-                380.39532470703125
+                314.0356140136719,
+                302.0354309082031
             ],
             "flags": {},
             "order": 52,
@@ -1978,8 +1978,8 @@
             "id": 189,
             "type": "LoraLoader",
             "pos": [
-                2312.8564453125,
-                456.593017578125
+                2717.047607421875,
+                421.92523193359375
             ],
             "size": [
                 315,
@@ -2033,12 +2033,12 @@
             "id": 190,
             "type": "GroundingDinoSAMSegment (segment anything)",
             "pos": [
-                577.8772583007812,
-                1874.0308837890625
+                1678.0782470703125,
+                1981.0941162109375
             ],
             "size": [
                 352.79998779296875,
-                129.3773956298828
+                133.9658660888672
             ],
             "flags": {},
             "order": 16,
@@ -2079,10 +2079,10 @@
                 }
             ],
             "properties": {
-                "cnr_id": "comfyui_segment_anything",
+                "aux_id": "storyicon/comfyui_segment_anything",
                 "ver": "ab6395596399d5048639cdab7e44ec9fae857a93",
                 "Node name for S&R": "GroundingDinoSAMSegment (segment anything)",
-                "aux_id": "storyicon/comfyui_segment_anything"
+                "cnr_id": "comfyui_segment_anything"
             },
             "widgets_values": [
                 "full face, hair",
@@ -2093,8 +2093,8 @@
             "id": 191,
             "type": "SAMLoader",
             "pos": [
-                206.44871520996094,
-                1714.65966796875
+                1255.666259765625,
+                1787.0540771484375
             ],
             "size": [
                 315,
@@ -2117,10 +2117,10 @@
                 }
             ],
             "properties": {
-                "cnr_id": "comfyui-impact-pack",
+                "aux_id": "ltdrdata/ComfyUI-Impact-Pack",
                 "ver": "6e3d07277bfc0817150c8daa2e3b6fc3595c9745",
                 "Node name for S&R": "SAMLoader",
-                "aux_id": "ltdrdata/ComfyUI-Impact-Pack"
+                "cnr_id": "comfyui-impact-pack"
             },
             "widgets_values": [
                 "sam_vit_b_01ec64.pth",
@@ -2131,12 +2131,12 @@
             "id": 192,
             "type": "GroundingDinoModelLoader (segment anything)",
             "pos": [
-                173.90821838378906,
-                1870.6025390625
+                1252.695556640625,
+                1927.7027587890625
             ],
             "size": [
                 361.20001220703125,
-                59.566593170166016
+                59.0567512512207
             ],
             "flags": {},
             "order": 8,
@@ -2155,10 +2155,10 @@
                 }
             ],
             "properties": {
-                "cnr_id": "comfyui_segment_anything",
+                "aux_id": "storyicon/comfyui_segment_anything",
                 "ver": "ab6395596399d5048639cdab7e44ec9fae857a93",
                 "Node name for S&R": "GroundingDinoModelLoader (segment anything)",
-                "aux_id": "storyicon/comfyui_segment_anything"
+                "cnr_id": "comfyui_segment_anything"
             },
             "widgets_values": [
                 "GroundingDINO_SwinB (938MB)"
@@ -2168,8 +2168,8 @@
             "id": 193,
             "type": "PreviewImage",
             "pos": [
-                954.7686767578125,
-                1931.3211669921875
+                2071.281982421875,
+                1977.20654296875
             ],
             "size": [
                 210,
@@ -2197,12 +2197,12 @@
             "id": 194,
             "type": "GroundingDinoSAMSegment (segment anything)",
             "pos": [
-                967.2510986328125,
-                1718.0989990234375
+                2050.115966796875,
+                1779.27685546875
             ],
             "size": [
                 352.79998779296875,
-                129.37229919433594
+                122
             ],
             "flags": {},
             "order": 17,
@@ -2243,10 +2243,10 @@
                 }
             ],
             "properties": {
-                "cnr_id": "comfyui_segment_anything",
+                "aux_id": "storyicon/comfyui_segment_anything",
                 "ver": "ab6395596399d5048639cdab7e44ec9fae857a93",
                 "Node name for S&R": "GroundingDinoSAMSegment (segment anything)",
-                "aux_id": "storyicon/comfyui_segment_anything"
+                "cnr_id": "comfyui_segment_anything"
             },
             "widgets_values": [
                 "jersey",
@@ -2257,8 +2257,8 @@
             "id": 195,
             "type": "PreviewImage",
             "pos": [
-                1184.941162109375,
-                1935.039306640625
+                2315.73193359375,
+                1970.728271484375
             ],
             "size": [
                 210,
@@ -2286,8 +2286,8 @@
             "id": 197,
             "type": "GroundingDinoSAMSegment (segment anything)",
             "pos": [
-                1547.4215087890625,
-                1067.90625
+                2643.544189453125,
+                1055.6702880859375
             ],
             "size": [
                 352.79998779296875,
@@ -2332,10 +2332,10 @@
                 }
             ],
             "properties": {
-                "cnr_id": "comfyui_segment_anything",
+                "aux_id": "storyicon/comfyui_segment_anything",
                 "ver": "ab6395596399d5048639cdab7e44ec9fae857a93",
                 "Node name for S&R": "GroundingDinoSAMSegment (segment anything)",
-                "aux_id": "storyicon/comfyui_segment_anything"
+                "cnr_id": "comfyui_segment_anything"
             },
             "widgets_values": [
                 "full face, hair",
@@ -2346,15 +2346,15 @@
             "id": 199,
             "type": "Reroute",
             "pos": [
-                2430.931884765625,
-                645.781005859375
+                2957.375,
+                658.7815551757812
             ],
             "size": [
                 75,
                 26
             ],
             "flags": {},
-            "order": 15,
+            "order": 12,
             "mode": 0,
             "inputs": [
                 {
@@ -2383,15 +2383,15 @@
             "id": 202,
             "type": "Reroute",
             "pos": [
-                2351.375,
-                354.56097412109375
+                2802.673095703125,
+                433.1759033203125
             ],
             "size": [
                 75,
                 26
             ],
             "flags": {},
-            "order": 14,
+            "order": 15,
             "mode": 0,
             "inputs": [
                 {
@@ -2419,12 +2419,12 @@
             "id": 203,
             "type": "PreviewImage",
             "pos": [
-                3545.762451171875,
-                944.103515625
+                4253.39892578125,
+                1015.4788208007812
             ],
             "size": [
-                343.96722412109375,
-                285.68133544921875
+                243.02206420898438,
+                200.54071044921875
             ],
             "flags": {},
             "order": 40,
@@ -2448,12 +2448,12 @@
             "id": 204,
             "type": "PreviewImage",
             "pos": [
-                1624.8568115234375,
-                1294.12255859375
+                2648.584228515625,
+                1255.375732421875
             ],
             "size": [
-                321.4002685546875,
-                337.3914489746094
+                269.3982238769531,
+                216.5631561279297
             ],
             "flags": {},
             "order": 32,
@@ -2477,12 +2477,12 @@
             "id": 205,
             "type": "PreviewImage",
             "pos": [
-                3996.898193359375,
-                1427.6197509765625
+                4249.771484375,
+                1424.0504150390625
             ],
             "size": [
-                254.34384155273438,
-                256.2747802734375
+                224.77398681640625,
+                206.82188415527344
             ],
             "flags": {},
             "order": 43,
@@ -3166,10 +3166,10 @@
             "id": 1,
             "title": "Base Flux Workflow",
             "bounding": [
-                -101.09403991699219,
-                105.46062469482422,
-                2193.214599609375,
-                654.4839477539062
+                973.6148071289062,
+                297.6643371582031,
+                1582.2413330078125,
+                513.0077514648438
             ],
             "color": "#3f789e",
             "font_size": 40,
@@ -3179,8 +3179,8 @@
             "id": 3,
             "title": "Redux",
             "bounding": [
-                -42.1525764465332,
-                795.3681640625,
+                1061.1065673828125,
+                851.4489135742188,
                 1485.3955078125,
                 804.1078491210938
             ],
@@ -3192,10 +3192,10 @@
             "id": 5,
             "title": "Inpaint Crop",
             "bounding": [
-                1486.7742919921875,
-                876.7360229492188,
-                2837.828857421875,
-                839.903076171875
+                2582.897216796875,
+                864.50048828125,
+                2205.64697265625,
+                822.0592041015625
             ],
             "color": "#3f789e",
             "font_size": 24,
@@ -3205,10 +3205,10 @@
             "id": 6,
             "title": "Flux Inpainting",
             "bounding": [
-                2243.527587890625,
-                107.476318359375,
-                1834.797607421875,
-                743.1068115234375
+                2694.82568359375,
+                186.0911407470703,
+                1392.882080078125,
+                619.8823852539062
             ],
             "color": "#3f789e",
             "font_size": 24,
@@ -3218,10 +3218,10 @@
             "id": 7,
             "title": "Inpaint Stitch",
             "bounding": [
-                4127.91845703125,
-                270.09478759765625,
-                1016.5473022460938,
-                514.0317993164062
+                4124.85986328125,
+                385.31494140625,
+                665.4823608398438,
+                416.45147705078125
             ],
             "color": "#3f789e",
             "font_size": 24,
@@ -3231,10 +3231,10 @@
             "id": 8,
             "title": "Segmentation",
             "bounding": [
-                5.779011249542236,
-                1630.3980712890625,
-                1424.002685546875,
-                581.7219848632812
+                1223.23876953125,
+                1696.674560546875,
+                1332.2342529296875,
+                543.9949951171875
             ],
             "color": "#3f789e",
             "font_size": 24,
@@ -3244,12 +3244,17 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 0.5943821307205008,
+            "scale": 0.6538203437925509,
             "offset": [
-                -2892.0090001539265,
-                -157.91925162002775
+                -1068.751242524026,
+                -1190.2107287311883
             ]
-        }
+        },
+        "ue_links": [],
+        "VHS_latentpreview": false,
+        "VHS_latentpreviewrate": 0,
+        "VHS_MetadataImage": true,
+        "VHS_KeepIntermediate": true
     },
     "version": 0.4
 }
