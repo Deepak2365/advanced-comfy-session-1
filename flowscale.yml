@@ -241,6 +241,15 @@ workflows:
     outputs: []
     skip_preprocess: true
     advancedConfig: false
+  - id: 3u6h7bjrxef
+    name: flux_redux_workflow_api.json
+    file: imported_from_deepaks_projects/flux_redux_workflow_api.json
+    version: 0
+    description: ''
+    inputs: []
+    outputs: []
+    skip_preprocess: true
+    advancedConfig: false
 normal_workflows:
   - id: a8le8dieik
     name: controlnet_connection.json
@@ -334,3 +343,7 @@ normal_workflows:
     name: flux_fill_workflow.json
     file: imported_from_deepaks_projects/flux_fill_workflow.json
     version: 2
+  - id: 3ktmqfkwhlu
+    name: flux_redux_workflow.json
+    file: imported_from_deepaks_projects/flux_redux_workflow.json
+    version: 0
