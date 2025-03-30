@@ -204,6 +204,16 @@ workflows:
     outputs: []
     skip_preprocess: true
     advancedConfig: false
+  - id: a47zjzqi9
+    name: ai_influencer_using_ace_plus_plus_lora_api.json
+    file: >-
+      imported_from_deepaks_projects/ai_influencer_using_ace_plus_plus_lora_api.json
+    version: 0
+    description: ''
+    inputs: []
+    outputs: []
+    skip_preprocess: true
+    advancedConfig: false
 normal_workflows:
   - id: a8le8dieik
     name: controlnet_connection.json
@@ -281,3 +291,7 @@ normal_workflows:
     name: ai_influencer_improved.json
     file: imported_from_deepaks_projects/ai_influencer_improved.json
     version: 1
+  - id: fjgm2ur3o5r
+    name: ai_influencer_using_ace_plus_plus_lora.json
+    file: imported_from_deepaks_projects/ai_influencer_using_ace_plus_plus_lora.json
+    version: 0
