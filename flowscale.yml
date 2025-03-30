@@ -186,6 +186,15 @@ workflows:
     outputs: []
     skip_preprocess: true
     advancedConfig: false
+  - id: 6hzhe6519e8
+    name: face_swapping_workflow_api.json
+    file: imported_from_deepaks_projects/face_swapping_workflow_api.json
+    version: 0
+    description: ''
+    inputs: []
+    outputs: []
+    skip_preprocess: true
+    advancedConfig: false
 normal_workflows:
   - id: a8le8dieik
     name: controlnet_connection.json
