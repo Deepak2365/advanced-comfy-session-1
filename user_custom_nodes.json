@@ -456,5 +456,26 @@
     "pip": [],
     "preemptions": [],
     "cached": "False"
+  },
+  {
+    "name": "FaceSwap",
+    "url": "https://github.com/imb101/ComfyUI-FaceSwap",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "imb101",
+      "title": "FaceSwap",
+      "id": "faceswap",
+      "reference": "https://github.com/imb101/ComfyUI-FaceSwap",
+      "files": [
+        "https://github.com/imb101/ComfyUI-FaceSwap"
+      ],
+      "install_type": "git-clone",
+      "description": "Nodes:FaceSwapNode. Very basic custom node to enable face swapping in ComfyUI. (roop)"
+    },
+    "nodes": [],
+    "pip": [],
+    "apt": [],
+    "cached": "False"
   }
 ]
