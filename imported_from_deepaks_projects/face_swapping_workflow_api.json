@@ -1,0 +1,239 @@
+{
+    "3": {
+        "inputs": {
+            "seed": 273344224135573,
+            "steps": 30,
+            "cfg": 8,
+            "sampler_name": "dpmpp_2m_sde",
+            "scheduler": "karras",
+            "denoise": 1,
+            "model": [
+                "13",
+                0
+            ],
+            "positive": [
+                "6",
+                0
+            ],
+            "negative": [
+                "7",
+                0
+            ],
+            "latent_image": [
+                "5",
+                0
+            ]
+        },
+        "class_type": "KSampler",
+        "_meta": {
+            "title": "KSampler"
+        }
+    },
+    "4": {
+        "inputs": {
+            "ckpt_name": "epicrealism_naturalSinRC1VAE.safetensors"
+        },
+        "class_type": "CheckpointLoaderSimple",
+        "_meta": {
+            "title": "Load Checkpoint"
+        }
+    },
+    "5": {
+        "inputs": {
+            "width": 1024,
+            "height": 1024,
+            "batch_size": 1
+        },
+        "class_type": "EmptyLatentImage",
+        "_meta": {
+            "title": "Empty Latent Image"
+        }
+    },
+    "6": {
+        "inputs": {
+            "text": "image of aman, riding a Harley Davidson motorcycle, wearing a windcheater, backdrop of Bosphorus Lake in Istanbul",
+            "clip": [
+                "18",
+                1
+            ]
+        },
+        "class_type": "CLIPTextEncode",
+        "_meta": {
+            "title": "CLIP Text Encode (Prompt)"
+        }
+    },
+    "7": {
+        "inputs": {
+            "text": "nsfw, nudity, nude, bad anatomy, extra limbs, disproprtionate, stunted, animation, [additional people]",
+            "clip": [
+                "18",
+                1
+            ]
+        },
+        "class_type": "CLIPTextEncode",
+        "_meta": {
+            "title": "CLIP Text Encode (Prompt)"
+        }
+    },
+    "8": {
+        "inputs": {
+            "samples": [
+                "3",
+                0
+            ],
+            "vae": [
+                "4",
+                2
+            ]
+        },
+        "class_type": "VAEDecode",
+        "_meta": {
+            "title": "VAE Decode"
+        }
+    },
+    "10": {
+        "inputs": {
+            "image": "Apparel Tommy Hilfiger shoot- British male.png",
+            "upload": "image"
+        },
+        "class_type": "LoadImage",
+        "_meta": {
+            "title": "Load Image"
+        }
+    },
+    "11": {
+        "inputs": {
+            "interpolation": "LANCZOS",
+            "crop_position": "top",
+            "sharpening": 0.05,
+            "image": [
+                "10",
+                0
+            ]
+        },
+        "class_type": "PrepImageForClipVision",
+        "_meta": {
+            "title": "Prep Image For ClipVision"
+        }
+    },
+    "12": {
+        "inputs": {
+            "images": [
+                "11",
+                0
+            ]
+        },
+        "class_type": "PreviewImage",
+        "_meta": {
+            "title": "Preview Image"
+        }
+    },
+    "13": {
+        "inputs": {
+            "weight": 0.2,
+            "start_at": 0,
+            "end_at": 1,
+            "weight_type": "prompt is more important",
+            "model": [
+                "14",
+                0
+            ],
+            "ipadapter": [
+                "14",
+                1
+            ],
+            "image": [
+                "10",
+                0
+            ]
+        },
+        "class_type": "IPAdapter",
+        "_meta": {
+            "title": "IPAdapter"
+        }
+    },
+    "14": {
+        "inputs": {
+            "preset": "PLUS FACE (portraits)",
+            "model": [
+                "18",
+                0
+            ]
+        },
+        "class_type": "IPAdapterUnifiedLoader",
+        "_meta": {
+            "title": "IPAdapter Unified Loader"
+        }
+    },
+    "15": {
+        "inputs": {
+            "enabled": true,
+            "swap_model": "inswapper_128.onnx",
+            "facedetection": "retinaface_resnet50",
+            "face_restore_model": "none",
+            "face_restore_visibility": 1,
+            "codeformer_weight": 0.5,
+            "detect_gender_input": "no",
+            "detect_gender_source": "no",
+            "input_faces_index": "0",
+            "source_faces_index": "0",
+            "console_log_level": 1,
+            "input_image": [
+                "8",
+                0
+            ],
+            "source_image": [
+                "10",
+                0
+            ]
+        },
+        "class_type": "ReActorFaceSwap",
+        "_meta": {
+            "title": "ReActor 🌌 Fast Face Swap"
+        }
+    },
+    "16": {
+        "inputs": {
+            "filename_prefix": "ComfyUI",
+            "images": [
+                "15",
+                0
+            ]
+        },
+        "class_type": "SaveImage",
+        "_meta": {
+            "title": "Save Image"
+        }
+    },
+    "17": {
+        "inputs": {
+            "images": [
+                "8",
+                0
+            ]
+        },
+        "class_type": "PreviewImage",
+        "_meta": {
+            "title": "Preview Image"
+        }
+    },
+    "18": {
+        "inputs": {
+            "lora_name": "IGInfluencer_V1.safetensors",
+            "strength_model": 1,
+            "strength_clip": 1,
+            "model": [
+                "4",
+                0
+            ],
+            "clip": [
+                "4",
+                1
+            ]
+        },
+        "class_type": "LoraLoader",
+        "_meta": {
+            "title": "Load LoRA"
+        }
+    }
+}
