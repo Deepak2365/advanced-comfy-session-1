@@ -177,6 +177,15 @@ workflows:
     outputs: []
     skip_preprocess: true
     advancedConfig: false
+  - id: 3ga2a820ate
+    name: homework_16_03_25_api.json
+    file: imported_from_deepaks_projects/homework_16_03_25_api.json
+    version: 1
+    description: ''
+    inputs: []
+    outputs: []
+    skip_preprocess: true
+    advancedConfig: false
 normal_workflows:
   - id: a8le8dieik
     name: controlnet_connection.json
@@ -245,4 +254,4 @@ normal_workflows:
   - id: qhbu9n0rwq
     name: homework_16_03_25.json
     file: imported_from_deepaks_projects/homework_16_03_25.json
-    version: 0
+    version: 1
