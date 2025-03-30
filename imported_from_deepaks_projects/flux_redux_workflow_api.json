@@ -1,0 +1,246 @@
+{
+    "10": {
+        "inputs": {
+            "seed": 540330670930747,
+            "steps": 30,
+            "cfg": 1,
+            "sampler_name": "euler",
+            "scheduler": "normal",
+            "denoise": 1,
+            "model": [
+                "15",
+                0
+            ],
+            "positive": [
+                "19",
+                0
+            ],
+            "negative": [
+                "12",
+                0
+            ],
+            "latent_image": [
+                "18",
+                0
+            ]
+        },
+        "class_type": "KSampler",
+        "_meta": {
+            "title": "KSampler"
+        }
+    },
+    "11": {
+        "inputs": {
+            "text": "image of actress drinking a glass of rose wine in a living room",
+            "clip": [
+                "16",
+                0
+            ]
+        },
+        "class_type": "CLIPTextEncode",
+        "_meta": {
+            "title": "CLIP Text Encode (Prompt)"
+        }
+    },
+    "12": {
+        "inputs": {
+            "text": "",
+            "clip": [
+                "16",
+                0
+            ]
+        },
+        "class_type": "CLIPTextEncode",
+        "_meta": {
+            "title": "CLIP Text Encode (Prompt)"
+        }
+    },
+    "13": {
+        "inputs": {
+            "samples": [
+                "10",
+                0
+            ],
+            "vae": [
+                "17",
+                0
+            ]
+        },
+        "class_type": "VAEDecode",
+        "_meta": {
+            "title": "VAE Decode"
+        }
+    },
+    "14": {
+        "inputs": {
+            "filename_prefix": "ComfyUI",
+            "images": [
+                "13",
+                0
+            ]
+        },
+        "class_type": "SaveImage",
+        "_meta": {
+            "title": "Save Image"
+        }
+    },
+    "15": {
+        "inputs": {
+            "unet_name": "flux1-dev.safetensors",
+            "weight_dtype": "fp8_e4m3fn"
+        },
+        "class_type": "UNETLoader",
+        "_meta": {
+            "title": "Load Diffusion Model"
+        }
+    },
+    "16": {
+        "inputs": {
+            "clip_name1": "flux/t5xxl_fp16.safetensors",
+            "clip_name2": "ViT-L-14-TEXT-detail-improved-hiT-GmP-HF.safetensors",
+            "type": "flux",
+            "device": "default"
+        },
+        "class_type": "DualCLIPLoader",
+        "_meta": {
+            "title": "DualCLIPLoader"
+        }
+    },
+    "17": {
+        "inputs": {
+            "vae_name": "ae.safetensors"
+        },
+        "class_type": "VAELoader",
+        "_meta": {
+            "title": "Load VAE"
+        }
+    },
+    "18": {
+        "inputs": {
+            "width": 1024,
+            "height": 1024,
+            "batch_size": 1
+        },
+        "class_type": "EmptySD3LatentImage",
+        "_meta": {
+            "title": "EmptySD3LatentImage"
+        }
+    },
+    "19": {
+        "inputs": {
+            "guidance": 25,
+            "conditioning": [
+                "24",
+                0
+            ]
+        },
+        "class_type": "FluxGuidance",
+        "_meta": {
+            "title": "FluxGuidance"
+        }
+    },
+    "20": {
+        "inputs": {
+            "downsampling_factor": 3,
+            "downsampling_function": "area",
+            "mode": "center crop (square)",
+            "weight": 0.8,
+            "autocrop_margin": 0.1,
+            "conditioning": [
+                "11",
+                0
+            ],
+            "style_model": [
+                "21",
+                0
+            ],
+            "clip_vision": [
+                "22",
+                0
+            ],
+            "image": [
+                "23",
+                0
+            ],
+            "mask": [
+                "23",
+                1
+            ]
+        },
+        "class_type": "ReduxAdvanced",
+        "_meta": {
+            "title": "ReduxAdvanced"
+        }
+    },
+    "21": {
+        "inputs": {
+            "style_model_name": "flux1-redux-dev.safetensors"
+        },
+        "class_type": "StyleModelLoader",
+        "_meta": {
+            "title": "Load Style Model"
+        }
+    },
+    "22": {
+        "inputs": {
+            "clip_name": "siglip-so400m-patch14-384.safetensors"
+        },
+        "class_type": "CLIPVisionLoader",
+        "_meta": {
+            "title": "Load CLIP Vision"
+        }
+    },
+    "23": {
+        "inputs": {
+            "image": "katrina image.jpg",
+            "upload": "image"
+        },
+        "class_type": "LoadImage",
+        "_meta": {
+            "title": "Load Image"
+        }
+    },
+    "24": {
+        "inputs": {
+            "downsampling_factor": 3,
+            "downsampling_function": "area",
+            "mode": "center crop (square)",
+            "weight": 1,
+            "autocrop_margin": 0.1,
+            "conditioning": [
+                "20",
+                0
+            ],
+            "style_model": [
+                "21",
+                0
+            ],
+            "clip_vision": [
+                "22",
+                0
+            ],
+            "image": [
+                "25",
+                0
+            ],
+            "mask": [
+                "25",
+                1
+            ]
+        },
+        "class_type": "ReduxAdvanced",
+        "_meta": {
+            "title": "ReduxAdvanced"
+        }
+    },
+    "25": {
+        "inputs": {
+            "image": "rose wine in glass.jpg",
+            "upload": "image"
+        },
+        "class_type": "LoadImage",
+        "_meta": {
+            "title": "Load Image"
+        }
+    }
+}
