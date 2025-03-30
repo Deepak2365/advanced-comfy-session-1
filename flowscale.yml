@@ -268,3 +268,7 @@ normal_workflows:
     name: face_swapping_workflow.json
     file: imported_from_deepaks_projects/face_swapping_workflow.json
     version: 0
+  - id: 34113ea9oae
+    name: ai_influencer_improved.json
+    file: imported_from_deepaks_projects/ai_influencer_improved.json
+    version: 0
