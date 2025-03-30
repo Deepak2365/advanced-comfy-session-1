@@ -168,6 +168,15 @@ workflows:
     outputs: []
     skip_preprocess: true
     advancedConfig: true
+  - id: x23zretmqfh
+    name: outpainting_medieval_village_api.json
+    file: imported_from_deepaks_projects/outpainting_medieval_village_api.json
+    version: 0
+    description: ''
+    inputs: []
+    outputs: []
+    skip_preprocess: true
+    advancedConfig: false
 normal_workflows:
   - id: a8le8dieik
     name: controlnet_connection.json
@@ -225,3 +234,7 @@ normal_workflows:
     name: basic_relighting.json
     file: relighting/basic_relighting.json
     version: 2
+  - id: ekx9hwkdeie
+    name: outpainting_medieval_village.json
+    file: imported_from_deepaks_projects/outpainting_medieval_village.json
+    version: 0
