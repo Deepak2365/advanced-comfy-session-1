@@ -217,12 +217,12 @@ workflows:
   - id: 6iaq7peyvug
     name: basic_flux_workflow_api.json
     file: imported_from_deepaks_projects/basic_flux_workflow_api.json
-    version: 0
+    version: 1
     description: ''
     inputs: []
     outputs: []
     skip_preprocess: true
-    advancedConfig: false
+    advancedConfig: true
 normal_workflows:
   - id: a8le8dieik
     name: controlnet_connection.json
@@ -307,4 +307,4 @@ normal_workflows:
   - id: 1buk0hbfnoc
     name: basic_flux_workflow.json
     file: imported_from_deepaks_projects/basic_flux_workflow.json
-    version: 0
+    version: 1
