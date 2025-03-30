@@ -40,7 +40,7 @@
                 "Node name for S&R": "CLIPTextEncode"
             },
             "widgets_values": [
-                "Image of a man walking in a park, holding a walking stick in one hand and a leash of a cocker spaniel dog, morning shot  "
+                "Image of a man walking in a park, holding a walking stick in one hand and a leash of a cocker spaniel dog, morning shot , both looking into the camera"
             ],
             "color": "#232",
             "bgcolor": "#353"
@@ -180,7 +180,7 @@
                 "Node name for S&R": "KSampler"
             },
             "widgets_values": [
-                173805153958804,
+                173805153958805,
                 "increment",
                 30,
                 1,
@@ -516,8 +516,8 @@
         "ds": {
             "scale": 0.6037753776435048,
             "offset": [
-                60.948835166229884,
-                -167.29114619186083
+                13.46977577894098,
+                -163.42660802969195
             ]
         },
         "ue_links": [],
