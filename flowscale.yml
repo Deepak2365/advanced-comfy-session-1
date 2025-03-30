@@ -238,3 +238,7 @@ normal_workflows:
     name: outpainting_medieval_village.json
     file: imported_from_deepaks_projects/outpainting_medieval_village.json
     version: 0
+  - id: eva5v93vh9
+    name: floor_plan_visualisation.json
+    file: imported_from_deepaks_projects/floor_plan_visualisation.json
+    version: 0
