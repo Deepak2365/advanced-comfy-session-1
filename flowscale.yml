@@ -195,6 +195,15 @@ workflows:
     outputs: []
     skip_preprocess: true
     advancedConfig: false
+  - id: 36cd3xqqbho
+    name: ai_influencer_improved_api.json
+    file: imported_from_deepaks_projects/ai_influencer_improved_api.json
+    version: 1
+    description: ''
+    inputs: []
+    outputs: []
+    skip_preprocess: true
+    advancedConfig: false
 normal_workflows:
   - id: a8le8dieik
     name: controlnet_connection.json
@@ -271,4 +280,4 @@ normal_workflows:
   - id: 34113ea9oae
     name: ai_influencer_improved.json
     file: imported_from_deepaks_projects/ai_influencer_improved.json
-    version: 0
+    version: 1
