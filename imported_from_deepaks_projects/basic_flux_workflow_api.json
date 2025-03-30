@@ -1,7 +1,7 @@
 {
     "6": {
         "inputs": {
-            "text": "Image of a man walking in a park, holding a walking stick in one hand and a leash of a cocker spaniel dog, morning shot  ",
+            "text": "Image of a man walking in a park, holding a walking stick in one hand and a leash of a cocker spaniel dog, morning shot , both looking into the camera",
             "clip": [
                 "38",
                 0
@@ -41,7 +41,7 @@
     },
     "31": {
         "inputs": {
-            "seed": 173805153958804,
+            "seed": 173805153958805,
             "steps": 30,
             "cfg": 1,
             "sampler_name": "euler",
