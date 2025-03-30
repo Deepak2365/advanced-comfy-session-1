@@ -1,0 +1,404 @@
+{
+    "10": {
+        "inputs": {
+            "seed": 325665615282223,
+            "steps": 30,
+            "cfg": 1,
+            "sampler_name": "euler",
+            "scheduler": "normal",
+            "denoise": 1,
+            "model": [
+                "15",
+                0
+            ],
+            "positive": [
+                "19",
+                0
+            ],
+            "negative": [
+                "12",
+                0
+            ],
+            "latent_image": [
+                "18",
+                0
+            ]
+        },
+        "class_type": "KSampler",
+        "_meta": {
+            "title": "KSampler"
+        }
+    },
+    "11": {
+        "inputs": {
+            "text": "image of actress looking into camera, sitting on a chair in living room, drinking wine, non-AI natural looking, realistic, highly detailed features, no animation",
+            "clip": [
+                "16",
+                0
+            ]
+        },
+        "class_type": "CLIPTextEncode",
+        "_meta": {
+            "title": "CLIP Text Encode (Prompt)"
+        }
+    },
+    "12": {
+        "inputs": {
+            "text": "",
+            "clip": [
+                "16",
+                0
+            ]
+        },
+        "class_type": "CLIPTextEncode",
+        "_meta": {
+            "title": "CLIP Text Encode (Prompt)"
+        }
+    },
+    "13": {
+        "inputs": {
+            "samples": [
+                "10",
+                0
+            ],
+            "vae": [
+                "17",
+                0
+            ]
+        },
+        "class_type": "VAEDecode",
+        "_meta": {
+            "title": "VAE Decode"
+        }
+    },
+    "15": {
+        "inputs": {
+            "unet_name": "flux1-dev.safetensors",
+            "weight_dtype": "fp8_e4m3fn"
+        },
+        "class_type": "UNETLoader",
+        "_meta": {
+            "title": "Load Diffusion Model"
+        }
+    },
+    "16": {
+        "inputs": {
+            "clip_name1": "flux/t5xxl_fp16.safetensors",
+            "clip_name2": "ViT-L-14-TEXT-detail-improved-hiT-GmP-HF.safetensors",
+            "type": "flux",
+            "device": "default"
+        },
+        "class_type": "DualCLIPLoader",
+        "_meta": {
+            "title": "DualCLIPLoader"
+        }
+    },
+    "17": {
+        "inputs": {
+            "vae_name": "ae.safetensors"
+        },
+        "class_type": "VAELoader",
+        "_meta": {
+            "title": "Load VAE"
+        }
+    },
+    "18": {
+        "inputs": {
+            "width": 1024,
+            "height": 1024,
+            "batch_size": 1
+        },
+        "class_type": "EmptySD3LatentImage",
+        "_meta": {
+            "title": "EmptySD3LatentImage"
+        }
+    },
+    "19": {
+        "inputs": {
+            "guidance": 25,
+            "conditioning": [
+                "38",
+                0
+            ]
+        },
+        "class_type": "FluxGuidance",
+        "_meta": {
+            "title": "FluxGuidance"
+        }
+    },
+    "20": {
+        "inputs": {
+            "downsampling_factor": 3,
+            "downsampling_function": "area",
+            "mode": "center crop (square)",
+            "weight": 1,
+            "autocrop_margin": 0.1,
+            "conditioning": [
+                "11",
+                0
+            ],
+            "style_model": [
+                "21",
+                0
+            ],
+            "clip_vision": [
+                "22",
+                0
+            ],
+            "image": [
+                "26",
+                0
+            ],
+            "mask": [
+                "26",
+                1
+            ]
+        },
+        "class_type": "ReduxAdvanced",
+        "_meta": {
+            "title": "ReduxAdvanced"
+        }
+    },
+    "21": {
+        "inputs": {
+            "style_model_name": "flux1-redux-dev.safetensors"
+        },
+        "class_type": "StyleModelLoader",
+        "_meta": {
+            "title": "Load Style Model"
+        }
+    },
+    "22": {
+        "inputs": {
+            "clip_name": "siglip-so400m-patch14-384.safetensors"
+        },
+        "class_type": "CLIPVisionLoader",
+        "_meta": {
+            "title": "Load CLIP Vision"
+        }
+    },
+    "24": {
+        "inputs": {
+            "downsampling_factor": 3,
+            "downsampling_function": "area",
+            "mode": "center crop (square)",
+            "weight": 1,
+            "autocrop_margin": 0.1,
+            "conditioning": [
+                "20",
+                0
+            ],
+            "style_model": [
+                "21",
+                0
+            ],
+            "clip_vision": [
+                "22",
+                0
+            ],
+            "image": [
+                "36",
+                0
+            ],
+            "mask": [
+                "36",
+                1
+            ]
+        },
+        "class_type": "ReduxAdvanced",
+        "_meta": {
+            "title": "ReduxAdvanced"
+        }
+    },
+    "26": {
+        "inputs": {
+            "prompt": "face",
+            "threshold": 0.3,
+            "sam_model": [
+                "27",
+                0
+            ],
+            "grounding_dino_model": [
+                "28",
+                0
+            ],
+            "image": [
+                "29",
+                0
+            ]
+        },
+        "class_type": "GroundingDinoSAMSegment (segment anything)",
+        "_meta": {
+            "title": "GroundingDinoSAMSegment (segment anything)"
+        }
+    },
+    "27": {
+        "inputs": {
+            "model_name": "sam_vit_h (2.56GB)"
+        },
+        "class_type": "SAMModelLoader (segment anything)",
+        "_meta": {
+            "title": "SAMModelLoader (segment anything)"
+        }
+    },
+    "28": {
+        "inputs": {
+            "model_name": "GroundingDINO_SwinT_OGC (694MB)"
+        },
+        "class_type": "GroundingDinoModelLoader (segment anything)",
+        "_meta": {
+            "title": "GroundingDinoModelLoader (segment anything)"
+        }
+    },
+    "29": {
+        "inputs": {
+            "image": "katrina image.jpg",
+            "upload": "image"
+        },
+        "class_type": "LoadImage",
+        "_meta": {
+            "title": "Load Image"
+        }
+    },
+    "31": {
+        "inputs": {
+            "model_name": "sam_vit_h (2.56GB)"
+        },
+        "class_type": "SAMModelLoader (segment anything)",
+        "_meta": {
+            "title": "SAMModelLoader (segment anything)"
+        }
+    },
+    "32": {
+        "inputs": {
+            "model_name": "GroundingDINO_SwinT_OGC (694MB)"
+        },
+        "class_type": "GroundingDinoModelLoader (segment anything)",
+        "_meta": {
+            "title": "GroundingDinoModelLoader (segment anything)"
+        }
+    },
+    "34": {
+        "inputs": {
+            "model_name": "sam_vit_h (2.56GB)"
+        },
+        "class_type": "SAMModelLoader (segment anything)",
+        "_meta": {
+            "title": "SAMModelLoader (segment anything)"
+        }
+    },
+    "35": {
+        "inputs": {
+            "model_name": "GroundingDINO_SwinT_OGC (694MB)"
+        },
+        "class_type": "GroundingDinoModelLoader (segment anything)",
+        "_meta": {
+            "title": "GroundingDinoModelLoader (segment anything)"
+        }
+    },
+    "36": {
+        "inputs": {
+            "prompt": "glass of wine",
+            "threshold": 0.3,
+            "sam_model": [
+                "34",
+                0
+            ],
+            "grounding_dino_model": [
+                "35",
+                0
+            ],
+            "image": [
+                "47",
+                0
+            ]
+        },
+        "class_type": "GroundingDinoSAMSegment (segment anything)",
+        "_meta": {
+            "title": "GroundingDinoSAMSegment (segment anything)"
+        }
+    },
+    "38": {
+        "inputs": {
+            "downsampling_factor": 3,
+            "downsampling_function": "area",
+            "mode": "center crop (square)",
+            "weight": 1,
+            "autocrop_margin": 0.1,
+            "conditioning": [
+                "24",
+                0
+            ],
+            "style_model": [
+                "21",
+                0
+            ],
+            "clip_vision": [
+                "22",
+                0
+            ],
+            "image": [
+                "42",
+                0
+            ]
+        },
+        "class_type": "ReduxAdvanced",
+        "_meta": {
+            "title": "ReduxAdvanced"
+        }
+    },
+    "42": {
+        "inputs": {
+            "image": "presidential-suite-leela-palace-hotel-delhi.jpg.webp",
+            "upload": "image"
+        },
+        "class_type": "LoadImage",
+        "_meta": {
+            "title": "Load Image"
+        }
+    },
+    "43": {
+        "inputs": {
+            "input_image": [
+                "13",
+                0
+            ],
+            "source_image": [
+                "20",
+                1
+            ],
+            "face_model": [
+                "45",
+                0
+            ]
+        },
+        "_meta": {}
+    },
+    "45": {
+        "inputs": {},
+        "_meta": {}
+    },
+    "46": {
+        "inputs": {
+            "filename_prefix": "ComfyUI",
+            "images": [
+                "43",
+                0
+            ]
+        },
+        "class_type": "SaveImage",
+        "_meta": {
+            "title": "Save Image"
+        }
+    },
+    "47": {
+        "inputs": {
+            "image": "rose wine in glass.jpg",
+            "upload": "image"
+        },
+        "class_type": "LoadImage",
+        "_meta": {
+            "title": "Load Image"
+        }
+    }
+}
