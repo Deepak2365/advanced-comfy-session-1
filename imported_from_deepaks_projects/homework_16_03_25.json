@@ -14,7 +14,7 @@
                 262
             ],
             "flags": {},
-            "order": 25,
+            "order": 24,
             "mode": 0,
             "inputs": [
                 {
@@ -75,7 +75,7 @@
                 135.14340209960938
             ],
             "flags": {},
-            "order": 17,
+            "order": 16,
             "mode": 0,
             "inputs": [
                 {
@@ -115,7 +115,7 @@
                 76
             ],
             "flags": {},
-            "order": 18,
+            "order": 17,
             "mode": 0,
             "inputs": [
                 {
@@ -155,7 +155,7 @@
                 46
             ],
             "flags": {},
-            "order": 26,
+            "order": 25,
             "mode": 0,
             "inputs": [
                 {
@@ -341,7 +341,7 @@
                 58
             ],
             "flags": {},
-            "order": 24,
+            "order": 23,
             "mode": 0,
             "inputs": [
                 {
@@ -381,7 +381,7 @@
                 234
             ],
             "flags": {},
-            "order": 21,
+            "order": 20,
             "mode": 0,
             "inputs": [
                 {
@@ -460,7 +460,7 @@
                 58
             ],
             "flags": {},
-            "order": 14,
+            "order": 4,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -496,7 +496,7 @@
                 58
             ],
             "flags": {},
-            "order": 4,
+            "order": 5,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -532,7 +532,7 @@
                 234
             ],
             "flags": {},
-            "order": 22,
+            "order": 21,
             "mode": 0,
             "inputs": [
                 {
@@ -609,7 +609,7 @@
                 122
             ],
             "flags": {},
-            "order": 19,
+            "order": 18,
             "mode": 0,
             "inputs": [
                 {
@@ -647,10 +647,10 @@
                 }
             ],
             "properties": {
-                "aux_id": "storyicon/comfyui_segment_anything",
+                "cnr_id": "comfyui_segment_anything",
                 "ver": "ab6395596399d5048639cdab7e44ec9fae857a93",
                 "Node name for S&R": "GroundingDinoSAMSegment (segment anything)",
-                "cnr_id": "comfyui_segment_anything"
+                "aux_id": "storyicon/comfyui_segment_anything"
             },
             "widgets_values": [
                 "face",
@@ -669,7 +669,7 @@
                 58
             ],
             "flags": {},
-            "order": 5,
+            "order": 6,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -682,10 +682,10 @@
                 }
             ],
             "properties": {
-                "aux_id": "storyicon/comfyui_segment_anything",
+                "cnr_id": "comfyui_segment_anything",
                 "ver": "ab6395596399d5048639cdab7e44ec9fae857a93",
                 "Node name for S&R": "SAMModelLoader (segment anything)",
-                "cnr_id": "comfyui_segment_anything"
+                "aux_id": "storyicon/comfyui_segment_anything"
             },
             "widgets_values": [
                 "sam_vit_h (2.56GB)"
@@ -703,7 +703,7 @@
                 59.577659606933594
             ],
             "flags": {},
-            "order": 6,
+            "order": 7,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -716,10 +716,10 @@
                 }
             ],
             "properties": {
-                "aux_id": "storyicon/comfyui_segment_anything",
+                "cnr_id": "comfyui_segment_anything",
                 "ver": "ab6395596399d5048639cdab7e44ec9fae857a93",
                 "Node name for S&R": "GroundingDinoModelLoader (segment anything)",
-                "cnr_id": "comfyui_segment_anything"
+                "aux_id": "storyicon/comfyui_segment_anything"
             },
             "widgets_values": [
                 "GroundingDINO_SwinT_OGC (694MB)"
@@ -737,7 +737,7 @@
                 364.031005859375
             ],
             "flags": {},
-            "order": 11,
+            "order": 13,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -777,7 +777,7 @@
                 58
             ],
             "flags": {},
-            "order": 7,
+            "order": 8,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -788,10 +788,10 @@
                 }
             ],
             "properties": {
-                "aux_id": "storyicon/comfyui_segment_anything",
+                "cnr_id": "comfyui_segment_anything",
                 "ver": "ab6395596399d5048639cdab7e44ec9fae857a93",
                 "Node name for S&R": "SAMModelLoader (segment anything)",
-                "cnr_id": "comfyui_segment_anything"
+                "aux_id": "storyicon/comfyui_segment_anything"
             },
             "widgets_values": [
                 "sam_vit_h (2.56GB)"
@@ -809,7 +809,7 @@
                 59.577659606933594
             ],
             "flags": {},
-            "order": 8,
+            "order": 9,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -820,10 +820,10 @@
                 }
             ],
             "properties": {
-                "aux_id": "storyicon/comfyui_segment_anything",
+                "cnr_id": "comfyui_segment_anything",
                 "ver": "ab6395596399d5048639cdab7e44ec9fae857a93",
                 "Node name for S&R": "GroundingDinoModelLoader (segment anything)",
-                "cnr_id": "comfyui_segment_anything"
+                "aux_id": "storyicon/comfyui_segment_anything"
             },
             "widgets_values": [
                 "GroundingDINO_SwinT_OGC (694MB)"
@@ -841,7 +841,7 @@
                 58
             ],
             "flags": {},
-            "order": 9,
+            "order": 10,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -854,10 +854,10 @@
                 }
             ],
             "properties": {
-                "aux_id": "storyicon/comfyui_segment_anything",
+                "cnr_id": "comfyui_segment_anything",
                 "ver": "ab6395596399d5048639cdab7e44ec9fae857a93",
                 "Node name for S&R": "SAMModelLoader (segment anything)",
-                "cnr_id": "comfyui_segment_anything"
+                "aux_id": "storyicon/comfyui_segment_anything"
             },
             "widgets_values": [
                 "sam_vit_h (2.56GB)"
@@ -875,7 +875,7 @@
                 59.577659606933594
             ],
             "flags": {},
-            "order": 10,
+            "order": 11,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -889,10 +889,10 @@
                 }
             ],
             "properties": {
-                "aux_id": "storyicon/comfyui_segment_anything",
+                "cnr_id": "comfyui_segment_anything",
                 "ver": "ab6395596399d5048639cdab7e44ec9fae857a93",
                 "Node name for S&R": "GroundingDinoModelLoader (segment anything)",
-                "cnr_id": "comfyui_segment_anything"
+                "aux_id": "storyicon/comfyui_segment_anything"
             },
             "widgets_values": [
                 "GroundingDINO_SwinT_OGC (694MB)"
@@ -910,7 +910,7 @@
                 122
             ],
             "flags": {},
-            "order": 20,
+            "order": 19,
             "mode": 0,
             "inputs": [
                 {
@@ -948,10 +948,10 @@
                 }
             ],
             "properties": {
-                "aux_id": "storyicon/comfyui_segment_anything",
+                "cnr_id": "comfyui_segment_anything",
                 "ver": "ab6395596399d5048639cdab7e44ec9fae857a93",
                 "Node name for S&R": "GroundingDinoSAMSegment (segment anything)",
-                "cnr_id": "comfyui_segment_anything"
+                "aux_id": "storyicon/comfyui_segment_anything"
             },
             "widgets_values": [
                 "glass of wine",
@@ -970,7 +970,7 @@
                 234
             ],
             "flags": {},
-            "order": 23,
+            "order": 22,
             "mode": 0,
             "inputs": [
                 {
@@ -1039,8 +1039,8 @@
             "id": 42,
             "type": "LoadImage",
             "pos": [
-                1206.7720947265625,
-                970.3651733398438
+                1219.6561279296875,
+                1341.85595703125
             ],
             "size": [
                 333.008056640625,
@@ -1071,7 +1071,7 @@
                 "Node name for S&R": "LoadImage"
             },
             "widgets_values": [
-                "LPC.webp",
+                "presidential-suite-leela-palace-hotel-delhi.jpg.webp",
                 "image"
             ]
         },
@@ -1098,20 +1098,20 @@
                 {
                     "name": "source_image",
                     "type": "IMAGE",
-                    "shape": 7,
-                    "link": 71
+                    "link": 71,
+                    "shape": 7
                 },
                 {
                     "name": "face_model",
                     "type": "FACE_MODEL",
-                    "shape": 7,
-                    "link": 53
+                    "link": 53,
+                    "shape": 7
                 },
                 {
                     "name": "face_boost",
                     "type": "FACE_BOOST",
-                    "shape": 7,
-                    "link": null
+                    "link": null,
+                    "shape": 7
                 }
             ],
             "outputs": [
@@ -1130,9 +1130,9 @@
                 }
             ],
             "properties": {
+                "Node name for S&R": "ReActorFaceSwap",
                 "aux_id": "Gourieff/ComfyUI-ReActor",
                 "ver": "d901609a1d5d1942a6b069b2f8f3778fee3a7134",
-                "Node name for S&R": "ReActorFaceSwap",
                 "cnr_id": "comfyui-reactor"
             },
             "widgets_values": [
@@ -1174,9 +1174,9 @@
                 }
             ],
             "properties": {
+                "Node name for S&R": "ReActorLoadFaceModel",
                 "aux_id": "Gourieff/ComfyUI-ReActor",
                 "ver": "d901609a1d5d1942a6b069b2f8f3778fee3a7134",
-                "Node name for S&R": "ReActorLoadFaceModel",
                 "cnr_id": "comfyui-reactor"
             },
             "widgets_values": [
@@ -1195,7 +1195,7 @@
                 342.9022216796875
             ],
             "flags": {},
-            "order": 28,
+            "order": 27,
             "mode": 0,
             "inputs": [
                 {
@@ -1225,7 +1225,7 @@
                 360.86236572265625
             ],
             "flags": {},
-            "order": 12,
+            "order": 14,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -1250,59 +1250,6 @@
             "widgets_values": [
                 "rose wine in glass.jpg",
                 "image"
-            ]
-        },
-        {
-            "id": 50,
-            "type": "GroundingDinoSAMSegment (segment anything)",
-            "pos": [
-                215.73342895507812,
-                1870.8258056640625
-            ],
-            "size": [
-                579.2169799804688,
-                149.8666534423828
-            ],
-            "flags": {},
-            "order": 16,
-            "mode": 0,
-            "inputs": [
-                {
-                    "name": "sam_model",
-                    "type": "SAM_MODEL",
-                    "link": null
-                },
-                {
-                    "name": "grounding_dino_model",
-                    "type": "GROUNDING_DINO_MODEL",
-                    "link": null
-                },
-                {
-                    "name": "image",
-                    "type": "IMAGE",
-                    "link": null
-                }
-            ],
-            "outputs": [
-                {
-                    "name": "IMAGE",
-                    "type": "IMAGE",
-                    "links": null
-                },
-                {
-                    "name": "MASK",
-                    "type": "MASK",
-                    "links": null
-                }
-            ],
-            "properties": {
-                "aux_id": "storyicon/comfyui_segment_anything",
-                "ver": "ab6395596399d5048639cdab7e44ec9fae857a93",
-                "Node name for S&R": "GroundingDinoSAMSegment (segment anything)"
-            },
-            "widgets_values": [
-                "",
-                0.3
             ]
         }
     ],
@@ -1644,10 +1591,15 @@
         "ds": {
             "scale": 0.6209213230591553,
             "offset": [
-                731.0990064551609,
-                -1318.0890758377902
+                -235.20666179000276,
+                -1347.6149000047367
             ]
-        }
+        },
+        "ue_links": [],
+        "VHS_latentpreview": false,
+        "VHS_latentpreviewrate": 0,
+        "VHS_MetadataImage": true,
+        "VHS_KeepIntermediate": true
     },
     "version": 0.4
 }
