@@ -130,7 +130,7 @@ workflows:
   - id: rni1aotomv
     name: product_photography_improved_api.json
     file: inpainting_and_outpainting/product_photography_improved_api.json
-    version: 11
+    version: 12
     description: ''
     inputs:
       - path: 64.inputs.filename_prefix
@@ -312,7 +312,7 @@ normal_workflows:
   - id: swakdc57orb
     name: product_photography_improved.json
     file: inpainting_and_outpainting/product_photography_improved.json
-    version: 11
+    version: 12
   - id: yyndohmuj6
     name: basic_relighting.json
     file: relighting/basic_relighting.json
