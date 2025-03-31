@@ -163,7 +163,7 @@
     },
     "21": {
         "inputs": {
-            "text": "text, watermark",
+            "text": "text, unnatural",
             "clip": [
                 "17",
                 1
